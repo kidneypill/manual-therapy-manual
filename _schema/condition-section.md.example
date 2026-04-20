@@ -1,0 +1,11 @@
+---
+uid: "CON-{REGION}-{CONDITION}-{SEQ}"
+category: "{category}"
+# overview | disease_definition | assessment | indication
+# contraindication | mechanism | prognosis
+section: "conditions"
+---
+
+# 섹션 제목 (한국어 / English)
+
+내용 작성...

@@ -1,0 +1,19 @@
+---
+uid: "TEC-{ACADEMY}-{CONDITION}-{SEQ}"
+condition_uid: "CON-{REGION}-{CONDITION}-{SEQ}"
+academy: "{academy-slug}"
+category: "technique"
+technique_name: ""
+target_region: ""
+patient_position: ""
+doctor_position: ""
+contact_point: ""
+line_of_drive: ""
+unique_notes: ""
+---
+
+# 테크닉명
+
+## 시술 방법
+
+## 주의사항

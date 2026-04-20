@@ -1,0 +1,14 @@
+# 질환 메타데이터 템플릿 (SSOT)
+# 실제 파일 위치: Conditions/{condition-slug}/_meta.yaml
+
+uid: "CON-{REGION}-{CONDITION}-{SEQ}"   # e.g. CON-FOOT-OVERPRONATION-001
+name_en: ""                              # 영문 정식명
+name_ko: ""                              # 한글명
+body_region:                             # 해당 신체 부위
+  - ""                                   # e.g. lower_extremity, foot, ankle
+icd_10: []                               # ICD-10 코드
+tags:
+  - ""
+related_conditions: []                   # 연관 질환 UID 목록
+academies:                               # 이 질환을 다루는 아카데미 slug
+  - ""                                   # e.g. applied-kinesiology

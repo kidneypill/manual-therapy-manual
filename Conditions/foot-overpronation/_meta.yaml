@@ -1,0 +1,17 @@
+uid: "CON-FOOT-OVERPRONATION-001"
+name_en: "Foot Overpronation"
+name_ko: "발 과회내"
+body_region:
+  - lower_extremity
+  - foot
+  - ankle
+icd_10: []
+tags:
+  - foot
+  - pronation
+  - flatfoot
+  - tibialis_posterior
+  - triceps_surae
+related_conditions: []
+academies:
+  - applied-kinesiology

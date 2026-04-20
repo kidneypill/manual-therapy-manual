@@ -1,0 +1,11 @@
+---
+uid: "{ACADEMY}-{CONDITION}-{CATEGORY}-{SEQ}"
+condition_uid: "CON-{REGION}-{CONDITION}-{SEQ}"
+academy: "{academy-slug}"             # e.g. applied-kinesiology
+category: "{category}"
+# basic_info | overview | assessment | therapy | prognosis
+---
+
+# 섹션 제목
+
+내용 작성...

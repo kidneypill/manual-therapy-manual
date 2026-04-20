@@ -1,0 +1,28 @@
+# UID 레지스트리 — 모든 UID를 이 파일에 등록하여 중복/불일치 방지
+
+conditions:
+  - uid: "CON-FOOT-OVERPRONATION-001"
+    name_en: "Foot Overpronation"
+    file: "Conditions/foot-overpronation/_meta.yaml"
+
+academies:
+  - slug: "applied-kinesiology"
+    name_en: "Applied Kinesiology"
+
+academy_sections:
+  - uid: "AK-FOOT-OVERVIEW-001"
+    file: "Academies/applied-kinesiology/foot-overpronation/Overview.md"
+  - uid: "AK-FOOT-ASSESSMENT-001"
+    file: "Academies/applied-kinesiology/foot-overpronation/Assessment.md"
+  - uid: "AK-FOOT-THERAPY-001"
+    file: "Academies/applied-kinesiology/foot-overpronation/Therapy.md"
+  - uid: "AK-FOOT-BASICINFO-001"
+    file: "Academies/applied-kinesiology/foot-overpronation/Basic-Info.md"
+
+techniques:
+  - uid: "TEC-AK-FOOT-001"
+    name: "Neurolymphatic Reflex Point Stimulation"
+    file: "Academies/applied-kinesiology/foot-overpronation/Techniques/neurolymphatic-reflex.md"
+  - uid: "TEC-AK-FOOT-002"
+    name: "Origin-Insertion Technique"
+    file: "Academies/applied-kinesiology/foot-overpronation/Techniques/origin-insertion.md"
