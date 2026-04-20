@@ -1,7 +1,8 @@
 ---
-uid: "CON-FOOT-OVERPRONATION-001"
-category: "disease_definition"
-section: "conditions"
+uid: "CON-FOOT-OVERPRONATION-DEFINITION"
+parent_condition_uid: "CON-FOOT-OVERPRONATION-001"
+section_type: "DEFINITION"
+status: "active"
 ---
 
 # 질환 정의 (Disease Definition)

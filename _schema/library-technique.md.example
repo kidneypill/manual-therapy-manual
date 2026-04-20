@@ -1,0 +1,25 @@
+---
+uid: "TEC-{ACADEMY}-{TECHNIQUE_NAME}-{SEQ}" # 예: TEC-AK-NL-STIMULATION-001
+category: "treatment_library"
+academy: "{academy-slug}"
+technique_name: ""
+target_region: ""
+patient_position: ""
+doctor_position: ""
+contact_point: ""
+line_of_drive: ""
+status: "active"                     # active | planned | deprecated
+condition_uid: ""                    # 선택. 특정 질환 귀속 시 기재 (예: CON-FOOT-OVERPRONATION-001)
+---
+
+# {테크닉명}
+
+## 시술 절차
+1. 
+2. 
+
+## 기전 및 기대 효과
+{치료 기전에 대한 설명}
+
+## 주의사항
+{금기증이나 부작용 관련 내용}

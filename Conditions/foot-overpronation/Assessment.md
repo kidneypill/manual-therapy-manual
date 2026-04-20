@@ -1,7 +1,8 @@
 ---
-uid: "CON-FOOT-OVERPRONATION-001"
-category: "assessment"
-section: "conditions"
+uid: "CON-FOOT-OVERPRONATION-ASSESSMENT"
+parent_condition_uid: "CON-FOOT-OVERPRONATION-001"
+section_type: "ASSESSMENT"
+status: "active"
 ---
 
 # 진단 및 평가 (Assessment)

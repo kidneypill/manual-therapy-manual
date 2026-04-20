@@ -1,8 +1,11 @@
 ---
-UID: "ASS-AK-FOOT-001"
-Parent_Concept: "CON-FOOT-001"
-Category: "Assessments"
-Academy: "Applied Kinesiology (AK)"
+uid: "ASS-AK-OVERPRONATION-001"
+name_ko: "응용근신경학 근육검사"
+name_en: "Applied kinesiology Muscle Test"
+parent_condition_uid: "CON-FOOT-OVERPRONATION-001"
+category: "assessment_library"
+academy: "applied-kinesiology"
+status: "active"
 ---
 
 # 1. AK 관점의 핵심 이론

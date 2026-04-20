@@ -1,11 +1,19 @@
 ---
-uid: "CON-{REGION}-{CONDITION}-{SEQ}"
-category: "{category}"
-# overview | disease_definition | assessment | indication
-# contraindication | mechanism | prognosis
-section: "conditions"
+uid: "CON-{REGION}-{CONDITION}-{SECTION_TYPE}"
+# SECTION_TYPE 값: DEFINITION | OVERVIEW | ASSESSMENT | TREATMENT | PROGNOSIS | MECHANISM
+# 예: CON-FOOT-OVERPRONATION-OVERVIEW
+parent_condition_uid: "CON-{REGION}-{CONDITION}-{SEQ}"
+section_type: "{SECTION_TYPE}"        # 대문자, uid의 SECTION_TYPE과 동일
+status: "active"                      # active | planned | deprecated
+
+# 라이브러리 참조 (uid-registry.yaml의 assessments 또는 techniques UID)
+library_links: []
+# 예: ["ASS-AK-OVERPRONATION-001", "TEC-AK-NL-STIMULATION-001"]
 ---
 
-# 섹션 제목 (한국어 / English)
+# {섹션 제목}
 
-내용 작성...
+## 개요/설명
+내용을 입력하세요...
+
+## 참조 라이브러리 데이터

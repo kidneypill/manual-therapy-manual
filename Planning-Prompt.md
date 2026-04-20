@@ -14,7 +14,7 @@
         기전(Mechanism)
         Visual materials
     질환 정의(Disease definition)
-    진단 및 평가(Assesment)
+    진단 및 평가(Assessment)
         Listing
         Physical exam
             Physical exam

@@ -1,7 +1,8 @@
 ---
-uid: "CON-FOOT-OVERPRONATION-001"
-category: "mechanism"
-section: "conditions"
+uid: "CON-FOOT-OVERPRONATION-MECHANISM"
+parent_condition_uid: "CON-FOOT-OVERPRONATION-001"
+section_type: "MECHANISM"
+status: "active"
 ---
 
 # 기전 (Mechanism)

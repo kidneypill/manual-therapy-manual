@@ -1,0 +1,26 @@
+---
+uid: "ASS-{TYPE}-{TEST_NAME}-{SEQ}" # 예: ASS-AK-OVERPRONATION-001
+name_ko: ""                          # 검사명 (한글)
+name_en: ""                          # 검사명 (영문)
+category: "assessment_library"
+academy: "{academy-slug}"            # 값: applied-kinesiology | general (비학파 이학적 검사)
+target_region: ""                    # 검사 부위
+status: "active"                     # active | planned | deprecated
+---
+
+# {검사명}
+
+## 검사 목적
+검사를 통해 확인하고자 하는 바를 기재합니다.
+
+## 검사 방법 (Procedure)
+1. 환자 자세
+2. 검사자 조작
+3. 확인 사항
+
+## 결과 판정 (Interpretation)
+- 양성(+) : 
+- 음성(-) : 
+
+## 주의사항
+- {검사 시 주의할 점}

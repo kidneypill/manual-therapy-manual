@@ -1,14 +1,23 @@
-# 질환 메타데이터 템플릿 (SSOT)
-# 실제 파일 위치: Conditions/{condition-slug}/_meta.yaml
-
-uid: "CON-{REGION}-{CONDITION}-{SEQ}"   # e.g. CON-FOOT-OVERPRONATION-001
+# 위치: Conditions/{condition-slug}/_meta.yaml
+uid: "CON-{REGION}-{CONDITION_NAME}-{SEQ}" # 예: CON-FOOT-OVERPRONATION-001
 name_en: ""                              # 영문 정식명
 name_ko: ""                              # 한글명
-body_region:                             # 해당 신체 부위
-  - ""                                   # e.g. lower_extremity, foot, ankle
-icd_10: []                               # ICD-10 코드
-tags:
-  - ""
+status: "active"                         # active | planned | deprecated
+body_region: []                          # 예: [lower_extremity, foot]
+icd_10: []                               # ICD-10 코드 목록
+tags: []                                 # 검색 및 필터링용 태그
 related_conditions: []                   # 연관 질환 UID 목록
-academies:                               # 이 질환을 다루는 아카데미 slug
-  - ""                                   # e.g. applied-kinesiology
+academies:                               # slug는 uid-registry.yaml > academies와 일치해야 함
+  - "applied-kinesiology"
+  - "chiropractic"
+condition_sections:                      # 이 질환에 속한 섹션 파일 로컬 인덱스
+  - uid: "CON-{REGION}-{CONDITION_NAME}-DEFINITION"
+    file: "Disease-Definition.md"
+  - uid: "CON-{REGION}-{CONDITION_NAME}-OVERVIEW"
+    file: "Overview.md"
+  - uid: "CON-{REGION}-{CONDITION_NAME}-ASSESSMENT"
+    file: "Assessment.md"
+  - uid: "CON-{REGION}-{CONDITION_NAME}-TREATMENT"
+    file: "Treatment.md"
+  - uid: "CON-{REGION}-{CONDITION_NAME}-PROGNOSIS"
+    file: "Prognosis.md"

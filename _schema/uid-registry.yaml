@@ -1,28 +1,97 @@
 # UID 레지스트리 — 모든 UID를 이 파일에 등록하여 중복/불일치 방지
+# 형식 규칙: UID-Convention.md 참조
+# status 값: active | planned | deprecated
 
 conditions:
   - uid: "CON-FOOT-OVERPRONATION-001"
     name_en: "Foot Overpronation"
+    name_ko: "발 과회내"
     file: "Conditions/foot-overpronation/_meta.yaml"
+    status: active
+    condition_sections:
+      - uid: "CON-FOOT-OVERPRONATION-OVERVIEW"
+        section_type: OVERVIEW
+        file: "Conditions/foot-overpronation/Overview.md"
+        status: active
+      - uid: "CON-FOOT-OVERPRONATION-DEFINITION"
+        section_type: DEFINITION
+        file: "Conditions/foot-overpronation/Disease-Definition.md"
+        status: active
+      - uid: "CON-FOOT-OVERPRONATION-ASSESSMENT"
+        section_type: ASSESSMENT
+        file: "Conditions/foot-overpronation/Assessment.md"
+        status: active
+      - uid: "CON-FOOT-OVERPRONATION-MECHANISM"
+        section_type: MECHANISM
+        file: "Conditions/foot-overpronation/Mechanism.md"
+        status: active
+        note: "MECHANISM은 프로젝트 확장 타입. 표준 5섹션(DEFINITION/OVERVIEW/ASSESSMENT/TREATMENT/PROGNOSIS) 외 추가."
+      - uid: "CON-FOOT-OVERPRONATION-TREATMENT"
+        section_type: TREATMENT
+        file: "Conditions/foot-overpronation/Treatment.md"
+        status: planned
+      - uid: "CON-FOOT-OVERPRONATION-PROGNOSIS"
+        section_type: PROGNOSIS
+        file: "Conditions/foot-overpronation/Prognosis.md"
+        status: planned
 
 academies:
   - slug: "applied-kinesiology"
     name_en: "Applied Kinesiology"
+    name_ko: "응용 근신경학"
 
 academy_sections:
-  - uid: "AK-FOOT-OVERVIEW-001"
+  - uid: "ACAD-AK-FOOT-OVERVIEW"
+    academy: "applied-kinesiology"
+    condition_uid: "CON-FOOT-OVERPRONATION-001"
     file: "Academies/applied-kinesiology/foot-overpronation/Overview.md"
-  - uid: "AK-FOOT-ASSESSMENT-001"
+    status: planned
+  - uid: "ACAD-AK-FOOT-ASSESSMENT"
+    academy: "applied-kinesiology"
+    condition_uid: "CON-FOOT-OVERPRONATION-001"
     file: "Academies/applied-kinesiology/foot-overpronation/Assessment.md"
-  - uid: "AK-FOOT-THERAPY-001"
+    status: planned
+  - uid: "ACAD-AK-FOOT-THERAPY"
+    academy: "applied-kinesiology"
+    condition_uid: "CON-FOOT-OVERPRONATION-001"
     file: "Academies/applied-kinesiology/foot-overpronation/Therapy.md"
-  - uid: "AK-FOOT-BASICINFO-001"
+    status: planned
+  - uid: "ACAD-AK-FOOT-BASICINFO"
+    academy: "applied-kinesiology"
+    condition_uid: "CON-FOOT-OVERPRONATION-001"
     file: "Academies/applied-kinesiology/foot-overpronation/Basic-Info.md"
+    status: planned
+    note: "BASICINFO는 프로젝트 확장 타입. UID-Convention.md에 명시 필요."
+
+muscles:
+  - uid: "MUS-AK-TIBIALIS-POSTERIOR"
+    name_en: "Tibialis Posterior"
+    name_ko: "후경골근"
+    academy: "applied-kinesiology"
+    file: "Academies/applied-kinesiology/Muscle/tibialis-posterior.md"
+    status: active
+
+assessments:
+  - uid: "ASS-AK-OVERPRONATION-001"
+    uid_previous: "ASS-AK-FOOT-001"
+    name_en: "AK Assessment — Foot Overpronation"
+    name_ko: "AK 발 과회내 평가"
+    academy: "applied-kinesiology"
+    file: "Assessments/Assessments-AK-Foot-Overpronation.md"
+    status: active
 
 techniques:
-  - uid: "TEC-AK-FOOT-001"
-    name: "Neurolymphatic Reflex Point Stimulation"
+  - uid: "TEC-AK-NL-STIMULATION-001"
+    uid_previous: "TEC-AK-FOOT-001"
+    name_en: "Neurolymphatic Reflex Point Stimulation"
+    name_ko: "신경림프 반사점 자극"
+    academy: "applied-kinesiology"
     file: "Academies/applied-kinesiology/foot-overpronation/Techniques/neurolymphatic-reflex.md"
-  - uid: "TEC-AK-FOOT-002"
-    name: "Origin-Insertion Technique"
+    status: planned
+  - uid: "TEC-AK-ORIGIN-INSERTION-001"
+    uid_previous: "TEC-AK-FOOT-002"
+    name_en: "Origin-Insertion Technique"
+    name_ko: "기시-정지 테크닉"
+    academy: "applied-kinesiology"
     file: "Academies/applied-kinesiology/foot-overpronation/Techniques/origin-insertion.md"
+    status: planned

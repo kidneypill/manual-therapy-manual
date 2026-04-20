@@ -2,8 +2,9 @@
 uid: "MUS-AK-TIBIALIS-POSTERIOR"
 name_en: "Tibialis Posterior"
 name_ko: "후경골근"
-academy: "applied-kinesiology"
 category: "muscle_profile"
+academy: "applied-kinesiology"
+status: "active"
 target_region: "lower_extremity"
 
 # 추간공 5요소 및 AK 핵심 데이터

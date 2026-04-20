@@ -1,9 +1,12 @@
 ---
-uid: "{ACADEMY}-{CONDITION}-{CATEGORY}-{SEQ}"
+uid: "ACAD-{ACADEMY}-{COND}-{TYPE}"
+# TYPE 값: OVERVIEW | ASSESSMENT | THERAPY | PROGNOSIS | BASICINFO
+# ACADEMY 값: AK | ORTHO | CHIRO
+# COND: 질환 약칭 (예: FOOT = foot-overpronation)
 condition_uid: "CON-{REGION}-{CONDITION}-{SEQ}"
 academy: "{academy-slug}"             # e.g. applied-kinesiology
-category: "{category}"
-# basic_info | overview | assessment | therapy | prognosis
+section_type: "{TYPE}"                # 대문자, uid의 TYPE과 동일
+status: "planned"                     # planned | active | deprecated
 ---
 
 # 섹션 제목

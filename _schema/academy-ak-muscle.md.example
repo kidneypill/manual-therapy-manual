@@ -1,0 +1,34 @@
+---
+uid: "MUS-AK-{MUSCLE_NAME}"          # 예: MUS-AK-TIBIALIS-POSTERIOR
+name_ko: ""
+name_en: ""
+category: "muscle_profile"
+academy: "applied-kinesiology"
+status: "active"                     # active | planned | deprecated
+related_conditions: []               # 예: ["CON-FOOT-OVERPRONATION-001"]
+
+# 추간공 5요소 (IVF 5 Factors)
+innervation: ""          # 신경지배 (Nerve)
+neurolymphatic:          # 신경림프 반사점 (NL)
+  anterior: ""
+  posterior: ""
+neurovascular: ""        # 신경혈관 반사점 (NV)
+meridian: ""             # 연관 경락
+organ_gland: []          # 연관 장기 및 내분비선
+nutrition: ""            # 관련 영양소
+---
+
+# {근육명}
+
+## 해부학 (Anatomy)
+- **기시**: 
+- **종지**: 
+- **작용**: 
+
+## 근육 검사 (Muscle Test)
+### 절차
+1. 
+2. 
+
+### 결과 해석
+- 강함/약함에 따른 임상적 의미

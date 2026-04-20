@@ -1,7 +1,8 @@
 ---
-uid: "CON-FOOT-OVERPRONATION-001"
-category: "overview"
-section: "conditions"
+uid: "CON-FOOT-OVERPRONATION-OVERVIEW"
+parent_condition_uid: "CON-FOOT-OVERPRONATION-001"
+section_type: "OVERVIEW"
+status: "active"
 ---
 
 # 개념 (Overview)
