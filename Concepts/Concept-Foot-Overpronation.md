@@ -52,4 +52,4 @@ Tags: ["Foot", "Foot Pronation", "Overpronation", "Flat Foot"]
 - **Unique test** : [Applied Kinesiology](../Assessments/Assessments-AK-Foot-Overpronation.md)
 
 # 3. 시각 자료 (Visual)
-![Foot_overpronation](../Assets/foot-overpronation/Foot_overpronation.jpg)
+![Foot_overpronation](/Assets/foot-overpronation/foot_overpronation.jpg)
