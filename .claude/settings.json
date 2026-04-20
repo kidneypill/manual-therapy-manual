@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python -c \"import sys,json; d=json.load(sys.stdin); fp=d.get('tool_input',{}).get('file_path','') or d.get('tool_response',{}).get('filePath',''); exit(0 if ('Concepts' in fp and fp.endswith('.md')) else 1)\" && cd \"Z:/Projects/Manual-Therapy-Manual\" && python sync_concepts.py 2>&1 || true",
+            "statusMessage": "Concepts 변경 감지 — sync_concepts.py 실행 중..."
+          }
+        ]
+      }
+    ]
+  }
+}

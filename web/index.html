@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manual Therapy Manual — 도수치료 지식 베이스</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── Tokens ─────────────────────────────────────────────────── */
+    :root {
+      --bg:          #0a0a0a;
+      --bg-2:        #111111;
+      --bg-3:        #171717;
+      --border:      rgba(255,255,255,0.07);
+      --border-m:    rgba(255,255,255,0.12);
+
+      --t-1:         #f0f0f0;
+      --t-2:         #888888;
+      --t-3:         #555555;
+
+      /* single accent — desaturated teal, clinical */
+      --accent:      #3ecfb2;
+      --accent-dim:  rgba(62, 207, 178, 0.12);
+      --accent-glow: rgba(62, 207, 178, 0.20);
+
+      --r:           8px;
+      --font:        'Noto Sans KR', 'Noto Sans', sans-serif;
+    }
+
+    /* ─── Reset ─────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--t-1);
+      font-family: var(--font);
+      font-size: 15px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    /* ─── Noise overlay ──────────────────────────────────────────── */
+    body::before {
+      content: '';
+      position: fixed; inset: 0; z-index: 0;
+      pointer-events: none;
+      opacity: .028;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 180px;
+    }
+
+    /* ─── NAV ───────────────────────────────────────────────────── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 32px;
+      height: 56px;
+      backdrop-filter: blur(16px) saturate(180%);
+      background: rgba(10,10,10,0.72);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+      font-weight: 600; font-size: 14px; letter-spacing: -0.01em;
+    }
+    .nav-logo-mark {
+      width: 24px; height: 24px;
+      background: var(--accent);
+      border-radius: 5px;
+      display: grid; place-items: center;
+    }
+    .nav-logo-mark svg { width: 13px; height: 13px; }
+
+    .nav-links {
+      display: flex; align-items: center; gap: 28px;
+      font-size: 13.5px; color: var(--t-2);
+    }
+    .nav-links a:hover { color: var(--t-1); transition: color .15s; }
+
+    .nav-cta {
+      font-size: 13px; font-weight: 500;
+      padding: 7px 16px;
+      border-radius: var(--r);
+      background: var(--t-1); color: var(--bg);
+      transition: opacity .15s;
+    }
+    .nav-cta:hover { opacity: .88; }
+
+    /* ─── LAYOUT UTIL ────────────────────────────────────────────── */
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    section { position: relative; z-index: 1; }
+
+    /* ─── HERO ───────────────────────────────────────────────────── */
+    .hero {
+      min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center;
+      padding: 120px 32px 80px;
+      overflow: hidden;
+    }
+
+    /* radial glow behind headline */
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 30%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px; height: 400px;
+      background: radial-gradient(ellipse at center,
+        rgba(62, 207, 178, 0.09) 0%,
+        transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-inner { position: relative; z-index: 1; max-width: 780px; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: 12px; font-weight: 500;
+      color: var(--accent);
+      border: 1px solid rgba(62, 207, 178, 0.25);
+      background: var(--accent-dim);
+      border-radius: 100px;
+      padding: 5px 13px;
+      margin-bottom: 32px;
+      letter-spacing: 0.03em;
+    }
+    .hero-badge-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 6px var(--accent);
+      animation: pulse 2.4s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: .3; }
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 72px);
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      color: var(--t-1);
+      margin-bottom: 24px;
+    }
+    h1 em {
+      font-style: normal;
+      color: var(--accent);
+    }
+
+    .hero-sub {
+      font-size: clamp(15px, 2vw, 17px);
+      color: var(--t-2);
+      font-weight: 400;
+      max-width: 520px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 11px 22px;
+      font-size: 14px; font-weight: 500;
+      border-radius: var(--r);
+      background: var(--accent); color: #0a0a0a;
+      transition: opacity .15s, transform .15s;
+    }
+    .btn-primary:hover { opacity: .88; transform: translateY(-1px); }
+
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 11px 22px;
+      font-size: 14px; font-weight: 400;
+      border-radius: var(--r);
+      border: 1px solid var(--border-m);
+      color: var(--t-2);
+      transition: border-color .15s, color .15s, transform .15s;
+    }
+    .btn-ghost:hover {
+      border-color: rgba(255,255,255,0.22);
+      color: var(--t-1);
+      transform: translateY(-1px);
+    }
+
+    /* scroll indicator */
+    .hero-scroll {
+      position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
+      color: var(--t-3); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+      animation: fadeInUp 1s .8s both;
+    }
+    .hero-scroll svg { animation: bounce 2s ease-in-out infinite; }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(4px); }
+    }
+
+    /* ─── DIVIDER ────────────────────────────────────────────────── */
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border-m), transparent);
+    }
+
+    /* ─── MARQUEE / STAT BAR ─────────────────────────────────────── */
+    .stat-bar {
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .stat-track {
+      display: flex; gap: 64px;
+      width: max-content;
+      animation: scroll-left 28s linear infinite;
+    }
+    @keyframes scroll-left {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+    .stat-item {
+      display: flex; align-items: center; gap: 10px;
+      white-space: nowrap; color: var(--t-2); font-size: 13px;
+    }
+    .stat-item span { color: var(--t-3); }
+    .stat-sep {
+      width: 4px; height: 4px; border-radius: 50%;
+      background: var(--border-m); flex-shrink: 0;
+    }
+
+    /* ─── SECTION HEADER ─────────────────────────────────────────── */
+    .section-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .section-label {
+      font-size: 11.5px; font-weight: 500; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--accent);
+      margin-bottom: 14px;
+    }
+    h2 {
+      font-size: clamp(26px, 4vw, 40px);
+      font-weight: 700; letter-spacing: -0.025em;
+      color: var(--t-1); line-height: 1.15;
+      margin-bottom: 14px;
+    }
+    .section-desc {
+      font-size: 15px; color: var(--t-2); max-width: 460px;
+      margin: 0 auto; line-height: 1.7;
+    }
+
+    /* ─── FEATURES ───────────────────────────────────────────────── */
+    .features { padding: 96px 0; }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .feature-card {
+      background: var(--bg);
+      padding: 36px 32px;
+      transition: background .2s;
+    }
+    .feature-card:hover { background: var(--bg-2); }
+
+    .feature-icon {
+      width: 40px; height: 40px;
+      border-radius: 9px;
+      border: 1px solid var(--border-m);
+      background: var(--bg-3);
+      display: grid; place-items: center;
+      margin-bottom: 20px;
+      color: var(--accent);
+    }
+
+    h3 {
+      font-size: 15px; font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+    .feature-desc {
+      font-size: 13.5px; color: var(--t-2); line-height: 1.65;
+    }
+
+    /* ─── WORKFLOW ───────────────────────────────────────────────── */
+    .workflow { padding: 96px 0; }
+
+    .workflow-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      position: relative;
+    }
+
+    /* connecting line between steps */
+    .workflow-steps::after {
+      content: '';
+      position: absolute;
+      top: 20px; left: 10%; right: 10%;
+      height: 1px;
+      background: linear-gradient(90deg,
+        transparent 0%,
+        var(--border-m) 20%,
+        var(--accent-dim) 50%,
+        var(--border-m) 80%,
+        transparent 100%);
+      z-index: 0;
+    }
+
+    .step {
+      position: relative; z-index: 1;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .step-num {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      border: 1px solid var(--border-m);
+      background: var(--bg-2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; font-weight: 600;
+      color: var(--t-2);
+      margin: 0 auto 20px;
+      position: relative;
+    }
+    .step:first-child .step-num,
+    .step:last-child .step-num {
+      border-color: rgba(62, 207, 178, 0.35);
+      background: var(--accent-dim);
+      color: var(--accent);
+    }
+
+    .step-title {
+      font-size: 13px; font-weight: 600;
+      margin-bottom: 6px;
+      letter-spacing: -0.01em;
+    }
+    .step-body {
+      font-size: 12.5px; color: var(--t-2); line-height: 1.6;
+    }
+
+    /* ─── STRUCTURE ──────────────────────────────────────────────── */
+    .structure { padding: 96px 0; }
+
+    .structure-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .structure-text h2 { text-align: left; }
+    .structure-text .section-label { text-align: left; }
+    .structure-text .section-desc { text-align: left; margin: 0 0 32px; }
+
+    .uid-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.5px;
+    }
+    .uid-table th {
+      text-align: left;
+      padding: 9px 12px;
+      color: var(--t-3);
+      font-weight: 500;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border);
+    }
+    .uid-table td {
+      padding: 11px 12px;
+      border-bottom: 1px solid var(--border);
+      color: var(--t-2);
+      vertical-align: top;
+    }
+    .uid-table td:first-child {
+      color: var(--t-1);
+      font-weight: 500;
+    }
+    .uid-code {
+      font-family: 'SF Mono', 'Consolas', monospace;
+      font-size: 11px;
+      background: var(--bg-3);
+      color: var(--accent);
+      padding: 2px 7px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      white-space: nowrap;
+    }
+
+    /* directory tree panel */
+    .dir-panel {
+      background: var(--bg-2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .dir-panel-header {
+      padding: 13px 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .dir-dot { width: 9px; height: 9px; border-radius: 50%; }
+    .dir-dot-r { background: #ff5f57; }
+    .dir-dot-y { background: #febc2e; }
+    .dir-dot-g { background: #28c840; }
+    .dir-panel-title {
+      margin-left: 4px;
+      font-size: 12px; color: var(--t-3);
+      font-family: monospace;
+    }
+
+    .dir-body {
+      padding: 20px 20px;
+      font-family: 'SF Mono', 'Consolas', monospace;
+      font-size: 12.5px;
+      line-height: 2;
+    }
+    .dir-row { display: flex; align-items: center; gap: 0; }
+    .dir-indent { color: var(--t-3); }
+    .dir-name { color: var(--t-2); }
+    .dir-name.accent { color: var(--accent); }
+    .dir-name.dim   { color: var(--t-3); }
+    .dir-comment {
+      margin-left: 10px;
+      color: var(--t-3);
+      font-size: 11px;
+    }
+
+    /* ─── CTA BAND ───────────────────────────────────────────────── */
+    .cta-band {
+      padding: 96px 0;
+      text-align: center;
+    }
+    .cta-band h2 { margin-bottom: 16px; }
+    .cta-band .section-desc { margin-bottom: 40px; }
+
+    .cta-inner {
+      background: var(--bg-2);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 64px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-inner::before {
+      content: '';
+      position: absolute;
+      top: -80px; left: 50%; transform: translateX(-50%);
+      width: 400px; height: 200px;
+      background: radial-gradient(ellipse, rgba(62,207,178,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* ─── FOOTER ─────────────────────────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 36px 0;
+    }
+    .footer-inner {
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .footer-left {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 13px; color: var(--t-3);
+    }
+    .footer-links {
+      display: flex; gap: 24px;
+      font-size: 13px; color: var(--t-3);
+    }
+    .footer-links a:hover { color: var(--t-2); transition: color .15s; }
+
+    /* ─── FADE-IN ANIMATIONS ─────────────────────────────────────── */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { opacity: 0; animation: fadeInUp .6s ease forwards; }
+    .d1 { animation-delay: .05s; }
+    .d2 { animation-delay: .15s; }
+    .d3 { animation-delay: .25s; }
+    .d4 { animation-delay: .35s; }
+    .d5 { animation-delay: .45s; }
+
+    /* ─── RESPONSIVE ─────────────────────────────────────────────── */
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      .container { padding: 0 20px; }
+
+      .feature-grid { grid-template-columns: 1fr; }
+      .workflow-steps { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .workflow-steps::after { display: none; }
+      .structure-layout { grid-template-columns: 1fr; gap: 40px; }
+      .footer-inner { flex-direction: column; gap: 16px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ─── NAV ─────────────────────────────────────────────────────── -->
+  <nav>
+    <div class="nav-logo">
+      <div class="nav-logo-mark">
+        <svg viewBox="0 0 13 13" fill="none">
+          <rect x="1" y="1" width="4" height="4" rx="1" fill="#0a0a0a"/>
+          <rect x="8" y="1" width="4" height="4" rx="1" fill="#0a0a0a"/>
+          <rect x="1" y="8" width="4" height="4" rx="1" fill="#0a0a0a"/>
+          <rect x="8" y="8" width="4" height="4" rx="1" fill="rgba(10,10,10,0.5)"/>
+        </svg>
+      </div>
+      MTM
+    </div>
+    <ul class="nav-links">
+      <li><a href="#features">기능</a></li>
+      <li><a href="#workflow">워크플로</a></li>
+      <li><a href="#structure">구조</a></li>
+    </ul>
+    <a class="nav-cta" href="#cta">시작하기</a>
+  </nav>
+
+
+  <!-- ─── HERO ─────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge fade-up d1">
+        <div class="hero-badge-dot"></div>
+        Markdown-based Knowledge Base
+      </div>
+
+      <h1 class="fade-up d2">
+        도수치료 지식의<br>
+        <em>체계적 관리</em>
+      </h1>
+
+      <p class="hero-sub fade-up d3">
+        질환, 검사, 치료, 학파 지식을 단일 마크다운 파일로 작성하면
+        <br>섹션별 데이터베이스가 자동으로 완성됩니다.
+      </p>
+
+      <div class="hero-actions fade-up d4">
+        <a class="btn-primary" href="#workflow">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M7 1L13 7L7 13M1 7H13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          워크플로 보기
+        </a>
+        <a class="btn-ghost" href="#features">기능 살펴보기</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll fade-up d5">
+      <span>Scroll</span>
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+        <path d="M6 1V11M1 6L6 11L11 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- ─── STAT BAR ──────────────────────────────────────────────────── -->
+  <div class="stat-bar">
+    <div class="stat-track" id="statTrack">
+      <!-- items duplicated for seamless loop via JS -->
+    </div>
+  </div>
+
+
+  <!-- ─── FEATURES ─────────────────────────────────────────────────── -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">기능</div>
+        <h2>단순한 메모에서<br>체계적인 지식으로</h2>
+        <p class="section-desc">
+          Concept 파일 하나로 질환의 전체 지식 체계를 구성합니다.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M2 4h12M2 8h8M2 12h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>자동 섹션 동기화</h3>
+          <p class="feature-desc">
+            Concepts 파일을 저장하면 Overview, Mechanism, Assessment,
+            Treatment, Prognosis가 자동으로 생성·갱신됩니다.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="9" y="9" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>UID 기반 연결 구조</h3>
+          <p class="feature-desc">
+            모든 지식 노드는 고유 UID로 식별됩니다. 질환, 검사,
+            치료 간의 참조 관계가 명확히 추적됩니다.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M8 2V4M8 12V14M2 8H4M12 8H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>학파별 독립 라이브러리</h3>
+          <p class="feature-desc">
+            Applied Kinesiology, Orthopedic 등 학파별 지식이
+            독립된 섹션으로 분리되어 혼용을 방지합니다.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8L6.5 11.5L13 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>무결성 자동 검사</h3>
+          <p class="feature-desc">
+            <code>check_integrity.py</code>가 UID 중복, 필수 필드 누락,
+            링크 오류를 자동으로 검출합니다.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M4 2h8a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1z" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M6 6h4M6 9h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>YAML 프론트매터</h3>
+          <p class="feature-desc">
+            각 파일은 구조화된 메타데이터를 YAML로 관리합니다.
+            기존 파일에 이식하거나 스키마를 확장하기 쉽습니다.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M8 2v4l3 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="8" cy="9" r="5" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>저장 시 즉시 실행</h3>
+          <p class="feature-desc">
+            Claude Code hook이 파일 저장을 감지해 동기화를
+            자동으로 실행합니다. 별도 명령 없이 항상 최신 상태.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── WORKFLOW ──────────────────────────────────────────────────── -->
+  <section class="workflow" id="workflow">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">워크플로</div>
+        <h2>한 번 작성,<br>자동으로 전개</h2>
+        <p class="section-desc">
+          Concept 파일을 작성하는 것만으로 전체 지식 구조가 완성됩니다.
+        </p>
+      </div>
+
+      <div class="workflow-steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-title">Concept 작성</div>
+          <p class="step-body">
+            <code>Concepts/Concept-{질환명}.md</code>에 통합 원본을 작성합니다. 표준 헤더 구조를 따릅니다.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-title">자동 감지</div>
+          <p class="step-body">
+            파일 저장 시 Claude Code hook이 변경을 감지하고 <code>sync_concepts.py</code>를 실행합니다.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-title">섹션 분리</div>
+          <p class="step-body">
+            스크립트가 헤딩 구조를 파싱해 섹션별 파일을 <code>Conditions/{slug}/</code>에 생성합니다.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-title">지식 완성</div>
+          <p class="step-body">
+            Overview, Mechanism, Assessment, Treatment, Prognosis가 각각 독립 파일로 완성됩니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── STRUCTURE ────────────────────────────────────────────────── -->
+  <section class="structure" id="structure">
+    <div class="container">
+      <div class="structure-layout">
+
+        <div class="structure-text">
+          <div class="section-label">구조</div>
+          <h2>명확한<br>디렉토리 설계</h2>
+          <p class="section-desc">
+            Input, Output, Library 세 역할로 디렉토리가 분리됩니다.
+            작성과 읽기의 흐름이 단방향으로 유지됩니다.
+          </p>
+
+          <br>
+
+          <table class="uid-table">
+            <thead>
+              <tr>
+                <th>카테고리</th>
+                <th>형식</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>질환</td>
+                <td><span class="uid-code">CON-FOOT-OVERPRONATION-001</span></td>
+              </tr>
+              <tr>
+                <td>검사</td>
+                <td><span class="uid-code">ASS-AK-SHOCK-ABSORBER-001</span></td>
+              </tr>
+              <tr>
+                <td>치료</td>
+                <td><span class="uid-code">TEC-AK-NL-STIMULATION-001</span></td>
+              </tr>
+              <tr>
+                <td>근육</td>
+                <td><span class="uid-code">MUS-AK-TIBIALIS-POSTERIOR</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="dir-panel">
+          <div class="dir-panel-header">
+            <div class="dir-dot dir-dot-r"></div>
+            <div class="dir-dot dir-dot-y"></div>
+            <div class="dir-dot dir-dot-g"></div>
+            <span class="dir-panel-title">manual-therapy-manual/</span>
+          </div>
+          <div class="dir-body">
+            <div class="dir-row">
+              <span class="dir-name accent">Concepts/</span>
+              <span class="dir-comment">← 작성</span>
+            </div>
+            <div class="dir-row">
+              <span class="dir-indent">│  </span>
+              <span class="dir-name dim">Concept-Foot-Overpronation.md</span>
+            </div>
+            <div class="dir-row"><span class="dir-name dim">│</span></div>
+            <div class="dir-row">
+              <span class="dir-name accent">Conditions/</span>
+              <span class="dir-comment">← 자동 생성</span>
+            </div>
+            <div class="dir-row">
+              <span class="dir-indent">│  </span>
+              <span class="dir-name dim">foot-overpronation/</span>
+            </div>
+            <div class="dir-row">
+              <span class="dir-indent">│  │  </span>
+              <span class="dir-name dim">Overview.md</span>
+            </div>
+            <div class="dir-row">
+              <span class="dir-indent">│  │  </span>
+              <span class="dir-name dim">Mechanism.md</span>
+            </div>
+            <div class="dir-row">
+              <span class="dir-indent">│  │  </span>
+              <span class="dir-name dim">Assessment.md</span>
+            </div>
+            <div class="dir-row">
+              <span class="dir-indent">│  │  </span>
+              <span class="dir-name dim">Treatment.md</span>
+            </div>
+            <div class="dir-row"><span class="dir-name dim">│</span></div>
+            <div class="dir-row">
+              <span class="dir-name">Assessments/</span>
+              <span class="dir-comment">← 검사 라이브러리</span>
+            </div>
+            <div class="dir-row">
+              <span class="dir-name">Academies/</span>
+              <span class="dir-comment">← 학파별 지식</span>
+            </div>
+            <div class="dir-row">
+              <span class="dir-name">Assets/</span>
+              <span class="dir-comment">← 이미지·영상</span>
+            </div>
+            <div class="dir-row">
+              <span class="dir-name">_schema/</span>
+              <span class="dir-comment">← 양식·레지스트리</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── CTA ──────────────────────────────────────────────────────── -->
+  <section class="cta-band" id="cta">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="section-label">시작하기</div>
+        <h2>지식을 체계로</h2>
+        <p class="section-desc">
+          Concept 파일 하나로 시작하세요.<br>
+          나머지는 자동으로 따라옵니다.
+        </p>
+        <br>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+              <path d="M1 6.5H12M7 1.5L12 6.5L7 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            README 읽기
+          </a>
+          <a class="btn-ghost" href="#">UID 규칙 확인</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <strong>MTM</strong>
+          <span>·</span>
+          <span>Manual Therapy Manual</span>
+        </div>
+        <div class="footer-links">
+          <a href="#">README</a>
+          <a href="#">UID 규칙</a>
+          <a href="#">스키마</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ─── SCRIPT ───────────────────────────────────────────────────── -->
+  <script>
+    /* ── Marquee stat items ── */
+    const stats = [
+      ['질환별 섹션 자동 분리',  '5 섹션'],
+      ['UID 기반 지식 관리',     '단일 식별자'],
+      ['학파 독립 아카이브',     'Applied Kinesiology'],
+      ['파일 저장 시 즉시 동기화', 'Hook 기반'],
+      ['무결성 자동 검사',       'check_integrity.py'],
+      ['YAML 프론트매터',        '구조화 메타데이터'],
+    ];
+
+    const track = document.getElementById('statTrack');
+    const items = [...stats, ...stats]; // duplicate for seamless loop
+    items.forEach(([label, val], i) => {
+      const el = document.createElement('div');
+      el.className = 'stat-item';
+      el.innerHTML = `${label} <span>${val}</span>`;
+      track.appendChild(el);
+      if (i < items.length - 1) {
+        const sep = document.createElement('div');
+        sep.className = 'stat-sep';
+        track.appendChild(sep);
+      }
+    });
+
+    /* ── Intersection Observer for scroll-triggered fade-ins ── */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+          e.target.style.transition = 'opacity .55s ease, transform .55s ease';
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(
+      '.feature-card, .step, .structure-layout, .cta-inner, .uid-table'
+    ).forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(16px)';
+      io.observe(el);
+    });
+  </script>
+
+</body>
+</html>
