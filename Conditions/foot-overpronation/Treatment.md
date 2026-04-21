@@ -1,6 +1,6 @@
 ---
 uid: CON-FOOT-OVERPRONATION-TREATMENT
-parent_condition_uid: CON-FOOT-OVERPRONATION
+parent_condition_uid: CON-FOOT-OVERPRONATION-001
 section_type: TREATMENT
 status: active
 ---

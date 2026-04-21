@@ -79,6 +79,12 @@ assessments:
     academy: "applied-kinesiology"
     file: "Assessments/Assessments-AK-Foot-Overpronation.md"
     status: active
+  - uid: "ASS-SOT-AK-CATEGORY-2-PELVIC-SUBLUXATION-001"
+    name_ko: "SOT-AK Category 2 골반 아탈구"
+    name_en: "SOT-AK Category 2 pelvic subluxation"
+    academy: ["SOT", "AK"]
+    file: "Assessments/Assessments-SOT-Category-2-Pelvic-Subluxation.md"
+    status: "active"
 
 techniques:
   - uid: "TEC-AK-NL-STIMULATION-001"

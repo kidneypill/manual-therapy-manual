@@ -6,7 +6,7 @@ name_ko: "개념-급성-요추-염좌"
 target_region: "spine"
 tags: ["Lumbar", "Acute sprain", "Lumbar sprain", "Lumbar strain", "Strain", "Sprain"]
 created: "2026-04-20"
-status: "draft"
+status: "planned"
 ---
 
 # Concept-Acute-Lumbar-Sprain

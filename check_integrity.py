@@ -282,17 +282,16 @@ def validate_muscle_profile(fm: dict, result: Result, reg: dict):
 # ── 파일 수집 ────────────────────────────────────────────────────────────────
 
 def collect_md_files(search_root: Path):
-    """검사 대상 .md 파일 목록 반환."""
+    """지정된 데이터 폴더 내의 .md 파일만 수집."""
+    # 검사 대상 폴더 목록
+    TARGET_DIRS = ["Academies", "Assessments", "Conditions", "Concepts", "Treatments"]
     files = []
-    for path in search_root.rglob("*.md"):
-        # 제외 디렉토리 필터
-        rel_parts = path.relative_to(ROOT).parts
-        if any(part in SKIP_DIRS for part in rel_parts):
-            continue
-        # 루트 레벨 단독 .md 파일 (README 등) 제외
-        if len(rel_parts) == 1:
-            continue
-        files.append(path)
+
+    for target in TARGET_DIRS:
+        target_path = search_root/target
+        if target_path.exists():
+            # 각 대상 폴더 하위의 모든 .md 파일을 찾습니다.
+            files.extend(target_path.rglob("*.md"))
     return sorted(files)
 
 
