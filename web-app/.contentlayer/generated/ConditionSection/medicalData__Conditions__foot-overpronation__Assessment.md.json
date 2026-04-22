@@ -1,0 +1,21 @@
+{
+  "uid": "CON-FOOT-OVERPRONATION-ASSESSMENT",
+  "parent_condition_uid": "CON-FOOT-OVERPRONATION-001",
+  "section_type": "ASSESSMENT",
+  "status": "active\r",
+  "body": {
+    "raw": "\r\n# 2. 진단 및 평가 (Assessment)\r\n- **장비근 단축 검사:** 족배굴곡 ROM을 검사한다\r\n  - 주의사항 : 거골(Talus)에 대해 종골(Calcaneus), 주상골(Navicular), 입방골(Cuboid)을 고정할 것\r\n  - 세부사항 : 종골, 중족골을 잡아서 고정\r\n  - **정상** : 족관절에서 10도 이상의 배굴\r\n  - **비정상** : 족관절에서 10도 미만의 배굴\r\n  - **결과해석** : 비정상인 경우 **장비근 단축**을 의미한다.\r\n- **sign:** Helbing's sign (+)\r\n  - 주의사항 : 신발을 벗은 상태에서 검사\r\n  - 세부사항 : 아킬레스건이 내측으로 휘어 들어간 상태\r\n- **observation** : 기립위\r\n  - 주의사항 : 신발을 벗은 상태에서 검사\r\n- **Unique test** :\r\n  - [Applied Kinesiology](/Assessments/foot-overpronation/Assessments-AK-Foot-Overpronation.md)\r\n  - [SOT](/Assessments/pelvic-subluxation/Assessments-SOT-Category-2-Pelvic-Subluxataion.md)\r\n",
+    "html": "<h1>2. 진단 및 평가 (Assessment)</h1>\n<ul>\n<li><strong>장비근 단축 검사:</strong> 족배굴곡 ROM을 검사한다\n<ul>\n<li>주의사항 : 거골(Talus)에 대해 종골(Calcaneus), 주상골(Navicular), 입방골(Cuboid)을 고정할 것</li>\n<li>세부사항 : 종골, 중족골을 잡아서 고정</li>\n<li><strong>정상</strong> : 족관절에서 10도 이상의 배굴</li>\n<li><strong>비정상</strong> : 족관절에서 10도 미만의 배굴</li>\n<li><strong>결과해석</strong> : 비정상인 경우 <strong>장비근 단축</strong>을 의미한다.</li>\n</ul>\n</li>\n<li><strong>sign:</strong> Helbing's sign (+)\n<ul>\n<li>주의사항 : 신발을 벗은 상태에서 검사</li>\n<li>세부사항 : 아킬레스건이 내측으로 휘어 들어간 상태</li>\n</ul>\n</li>\n<li><strong>observation</strong> : 기립위\n<ul>\n<li>주의사항 : 신발을 벗은 상태에서 검사</li>\n</ul>\n</li>\n<li><strong>Unique test</strong> :\n<ul>\n<li><a href=\"/Assessments/foot-overpronation/Assessments-AK-Foot-Overpronation.md\">Applied Kinesiology</a></li>\n<li><a href=\"/Assessments/pelvic-subluxation/Assessments-SOT-Category-2-Pelvic-Subluxataion.md\">SOT</a></li>\n</ul>\n</li>\n</ul>"
+  },
+  "_id": "medicalData/Conditions/foot-overpronation/Assessment.md",
+  "_raw": {
+    "sourceFilePath": "medicalData/Conditions/foot-overpronation/Assessment.md",
+    "sourceFileName": "Assessment.md",
+    "sourceFileDir": "medicalData/Conditions/foot-overpronation",
+    "contentType": "markdown",
+    "flattenedPath": "medicalData/Conditions/foot-overpronation/Assessment"
+  },
+  "type": "ConditionSection",
+  "conditionSlug": "foot-overpronation",
+  "sectionKey": "assessment"
+}

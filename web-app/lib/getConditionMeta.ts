@@ -15,7 +15,7 @@ export interface ConditionMeta {
 
 export function getConditionMeta(slug: string): ConditionMeta | null {
   try {
-    const filePath = path.join(REPO_ROOT, 'Conditions', slug, '_meta.yaml')
+    const filePath = path.join(REPO_ROOT, 'medicalData', 'Conditions', slug, '_meta.yaml')
     if (!fs.existsSync(filePath)) return null
     const raw = fs.readFileSync(filePath, 'utf-8')
     return yaml.load(raw) as ConditionMeta
@@ -25,7 +25,7 @@ export function getConditionMeta(slug: string): ConditionMeta | null {
 }
 
 export function getAllConditionSlugs(): string[] {
-  const conditionsDir = path.join(REPO_ROOT, 'Conditions')
+  const conditionsDir = path.join(REPO_ROOT, 'medicalData', 'Conditions')
   if (!fs.existsSync(conditionsDir)) return []
   return fs.readdirSync(conditionsDir).filter(name => {
     const p = path.join(conditionsDir, name)

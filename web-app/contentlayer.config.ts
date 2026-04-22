@@ -2,7 +2,7 @@ import { defineDocumentType, makeSource } from 'contentlayer2/source-files'
 
 export const ConditionSection = defineDocumentType(() => ({
   name: 'ConditionSection',
-  filePathPattern: 'Conditions/**/*.md',
+  filePathPattern: 'medicalData/Conditions/**/*.md',
   contentType: 'markdown',
   fields: {
     uid:                  { type: 'string', required: false },
@@ -17,7 +17,7 @@ export const ConditionSection = defineDocumentType(() => ({
   computedFields: {
     conditionSlug: {
       type: 'string',
-      resolve: (doc) => doc._raw.flattenedPath.split('/')[1],
+      resolve: (doc) => doc._raw.flattenedPath.split('/')[2],
     },
     sectionKey: {
       type: 'string',
@@ -28,7 +28,7 @@ export const ConditionSection = defineDocumentType(() => ({
 
 export const AssessmentDoc = defineDocumentType(() => ({
   name: 'AssessmentDoc',
-  filePathPattern: 'Assessments/**/*.md',
+  filePathPattern: 'medicalData/Assessments/**/*.md',
   contentType: 'markdown',
   fields: {
     uid:                  { type: 'string', required: false },
@@ -42,14 +42,14 @@ export const AssessmentDoc = defineDocumentType(() => ({
   computedFields: {
     conditionSlug: {
       type: 'string',
-      resolve: (doc) => doc._raw.flattenedPath.split('/')[1] ?? 'unknown',
+      resolve: (doc) => doc._raw.flattenedPath.split('/')[2] ?? 'unknown',
     },
   },
 }))
 
 export const AcademyDoc = defineDocumentType(() => ({
   name: 'AcademyDoc',
-  filePathPattern: 'Academies/**/*.md',
+  filePathPattern: 'medicalData/Academies/**/*.md',
   contentType: 'markdown',
   fields: {
     uid:               { type: 'string', required: false },
@@ -67,7 +67,7 @@ export const AcademyDoc = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: '..',
   contentDirExclude: [
-    'web-app', 'web', '_schema', 'Concepts', 'Treatments',
+    'web-app', 'web', 'automators', 'medicalData/_schema', 'medicalData/Concepts', 'medicalData/Treatments',
     '__pycache__', '.git', 'node_modules', '.claude',
   ],
   documentTypes: [ConditionSection, AssessmentDoc, AcademyDoc],

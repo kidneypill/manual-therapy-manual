@@ -1,0 +1,21 @@
+{
+  "uid": "CON-FOOT-OVERPRONATION-DEFINITION",
+  "parent_condition_uid": "CON-FOOT-OVERPRONATION-001",
+  "section_type": "DEFINITION",
+  "status": "active\r",
+  "body": {
+    "raw": "\r\n# 질환 정의 (Disease Definition)\r\n\r\n## 정의\r\n- 발의 **과도한 회내(excessive pronation)** 로 인해 내측족궁이 체중부하 시 비정상적으로 무너지는 상태.\r\n- 보행 주기의 75% 체중부하 시점까지 발이 견고한 지렛대 역할로 전환되지 않을 경우 진단한다.\r\n\r\n## 분류\r\n- **유연성 편평족(Flexible Flatfoot)** : 비체중부하 시 족궁이 회복되는 경우\r\n- **강직성 편평족(Rigid Flatfoot)** : 비체중부하 시에도 족궁이 회복되지 않는 경우\r\n\r\n## 관련 용어\r\n- Overpronation, 과회내, 편평족(Flatfoot), Pes Planus\r\n",
+    "html": "<h1>질환 정의 (Disease Definition)</h1>\n<h2>정의</h2>\n<ul>\n<li>발의 <strong>과도한 회내(excessive pronation)</strong> 로 인해 내측족궁이 체중부하 시 비정상적으로 무너지는 상태.</li>\n<li>보행 주기의 75% 체중부하 시점까지 발이 견고한 지렛대 역할로 전환되지 않을 경우 진단한다.</li>\n</ul>\n<h2>분류</h2>\n<ul>\n<li><strong>유연성 편평족(Flexible Flatfoot)</strong> : 비체중부하 시 족궁이 회복되는 경우</li>\n<li><strong>강직성 편평족(Rigid Flatfoot)</strong> : 비체중부하 시에도 족궁이 회복되지 않는 경우</li>\n</ul>\n<h2>관련 용어</h2>\n<ul>\n<li>Overpronation, 과회내, 편평족(Flatfoot), Pes Planus</li>\n</ul>"
+  },
+  "_id": "medicalData/Conditions/foot-overpronation/Disease-Definition.md",
+  "_raw": {
+    "sourceFilePath": "medicalData/Conditions/foot-overpronation/Disease-Definition.md",
+    "sourceFileName": "Disease-Definition.md",
+    "sourceFileDir": "medicalData/Conditions/foot-overpronation",
+    "contentType": "markdown",
+    "flattenedPath": "medicalData/Conditions/foot-overpronation/Disease-Definition"
+  },
+  "type": "ConditionSection",
+  "conditionSlug": "foot-overpronation",
+  "sectionKey": "definition"
+}

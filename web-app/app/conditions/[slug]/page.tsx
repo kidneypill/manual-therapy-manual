@@ -9,11 +9,11 @@ export async function generateStaticParams() {
 }
 
 interface Props {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
-export default function ConditionDetailPage({ params }: Props) {
-  const { slug } = params
+export default async function ConditionDetailPage({ params }: Props) {
+  const { slug } = await params
   const meta = getConditionMeta(slug)
   if (!meta) return notFound()
 

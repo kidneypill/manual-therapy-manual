@@ -3,7 +3,7 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const SRC = path.resolve(__dirname, '../../Assets')
+const SRC = path.resolve(__dirname, '../../medicalData/Assets')
 const DEST = path.resolve(__dirname, '../public/Assets')
 
 function copyDir(src, dest) {

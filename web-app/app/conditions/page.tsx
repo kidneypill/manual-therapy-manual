@@ -20,21 +20,7 @@ export default function ConditionsPage() {
         ) : (
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 16 }}>
             {conditions.map(c => (
-              <Link key={c.slug} href={`/conditions/${c.slug}`} style={{
-                display: 'block', padding: '28px 28px',
-                background: '#fff', border: '1px solid rgba(0,0,0,0.09)',
-                borderRadius: 12, transition: 'border-color 0.15s, box-shadow 0.15s',
-                textDecoration: 'none',
-              }}
-              onMouseEnter={e => {
-                ;(e.currentTarget as HTMLElement).style.borderColor = 'rgba(62,207,178,0.4)'
-                ;(e.currentTarget as HTMLElement).style.boxShadow = '0 2px 12px rgba(0,0,0,0.06)'
-              }}
-              onMouseLeave={e => {
-                ;(e.currentTarget as HTMLElement).style.borderColor = 'rgba(0,0,0,0.09)'
-                ;(e.currentTarget as HTMLElement).style.boxShadow = 'none'
-              }}
-              >
+              <Link key={c.slug} href={`/conditions/${c.slug}`} className="condition-card">
                 <div style={{ marginBottom: 12 }}>
                   <h2 style={{ fontSize: 17, fontWeight: 600, color: '#111', letterSpacing: '-0.01em', marginBottom: 4 }}>{c.name_en}</h2>
                   <p style={{ fontSize: 13, color: '#999' }}>{c.name_ko}</p>

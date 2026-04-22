@@ -1,0 +1,28 @@
+[
+  {
+    "uid": "MUS-AK-TIBIALIS-POSTERIOR",
+    "name_en": "Tibialis Posterior",
+    "name_ko": "후경골근",
+    "category": "muscle_profile",
+    "academy": "applied-kinesiology",
+    "status": "active",
+    "target_region": "lower_extremity",
+    "innervation": "경골신경 (Tibial Nerve), L5, S1",
+    "related_conditions": [
+      "CON-FOOT-OVERPRONATION-001\r"
+    ],
+    "body": {
+      "raw": "\r\n# 후경골근 (Tibialis Posterior)\r\n\r\n## 1. 해부학 (Anatomy)\r\n- **기시 (Origin)**: 경골 후면의 외측, 비골의 내측 2/3, 골간막, 근간격막, 심근막\r\n- **종지 (Insertion)**: 주상골 조면, 각 설상골의 족저면, 제2~제4중족골 기저부의 족저면, 입방골, 거골 재돌기\r\n- **작용 (Action)**: 발의 내번(Inversion), 족저굴곡(Plantar flexion), 발목관절 내측 안정화\r\n\r\n## 2. 근육 검사 (Muscle Test)\r\n### 검사 절차\r\n1. 환자는 앙와위(Supine)로 누워 발가락을 굴곡 상태로 유지합니다.\r\n2. 발을 최대한 족저굴곡시킨 후 내번(Inversion)시킵니다.\r\n3. 검사자는 발의 내측면에서 발등에 손을 대고, 발을 외번(Eversion)시키는 방향으로 압력을 가합니다.\r\n\r\n### 주의사항 및 확인사항\r\n- 후경골근 수축 시 해당 건(Tendon)이 도드라져 나오는지 확인해야 합니다.\r\n- 환자가 발목을 배굴(Dorsiflexion)할 경우 검사 매개변수가 변하므로 주의가 필요합니다.\r\n\r\n## 3. 추간공 5요소 및 AK 정보 (AK Specifics)\r\n### 신경 및 혈관계 (Nerve & NV)\r\n- **신경지배**: 경골신경 (L5, S1)\r\n- **신경혈관 반사점 (NV)**: 람다 (Lambda)\r\n\r\n### 신경림프 반사점 (NL)\r\n- **전방**: 배꼽 상방 2인치, 측방 1인치 (양측)\r\n- **후방**: T11과 T12 사이의 추궁판 근처\r\n\r\n### 경락 및 장기 (Meridian & Organ)\r\n- **연관 경락**: 심포경 (Pericardium)\r\n- **연관 장기**: 부신 (Adrenal), 방광 (Bladder)\r\n\r\n### 영양 (Nutrition)\r\n- 부신 농축물(Adrenal substance) 혹은 핵단백질 추출물(Nucleoprotein extract)",
+      "html": "<h1>후경골근 (Tibialis Posterior)</h1>\n<h2>1. 해부학 (Anatomy)</h2>\n<ul>\n<li><strong>기시 (Origin)</strong>: 경골 후면의 외측, 비골의 내측 2/3, 골간막, 근간격막, 심근막</li>\n<li><strong>종지 (Insertion)</strong>: 주상골 조면, 각 설상골의 족저면, 제2~제4중족골 기저부의 족저면, 입방골, 거골 재돌기</li>\n<li><strong>작용 (Action)</strong>: 발의 내번(Inversion), 족저굴곡(Plantar flexion), 발목관절 내측 안정화</li>\n</ul>\n<h2>2. 근육 검사 (Muscle Test)</h2>\n<h3>검사 절차</h3>\n<ol>\n<li>환자는 앙와위(Supine)로 누워 발가락을 굴곡 상태로 유지합니다.</li>\n<li>발을 최대한 족저굴곡시킨 후 내번(Inversion)시킵니다.</li>\n<li>검사자는 발의 내측면에서 발등에 손을 대고, 발을 외번(Eversion)시키는 방향으로 압력을 가합니다.</li>\n</ol>\n<h3>주의사항 및 확인사항</h3>\n<ul>\n<li>후경골근 수축 시 해당 건(Tendon)이 도드라져 나오는지 확인해야 합니다.</li>\n<li>환자가 발목을 배굴(Dorsiflexion)할 경우 검사 매개변수가 변하므로 주의가 필요합니다.</li>\n</ul>\n<h2>3. 추간공 5요소 및 AK 정보 (AK Specifics)</h2>\n<h3>신경 및 혈관계 (Nerve &#x26; NV)</h3>\n<ul>\n<li><strong>신경지배</strong>: 경골신경 (L5, S1)</li>\n<li><strong>신경혈관 반사점 (NV)</strong>: 람다 (Lambda)</li>\n</ul>\n<h3>신경림프 반사점 (NL)</h3>\n<ul>\n<li><strong>전방</strong>: 배꼽 상방 2인치, 측방 1인치 (양측)</li>\n<li><strong>후방</strong>: T11과 T12 사이의 추궁판 근처</li>\n</ul>\n<h3>경락 및 장기 (Meridian &#x26; Organ)</h3>\n<ul>\n<li><strong>연관 경락</strong>: 심포경 (Pericardium)</li>\n<li><strong>연관 장기</strong>: 부신 (Adrenal), 방광 (Bladder)</li>\n</ul>\n<h3>영양 (Nutrition)</h3>\n<ul>\n<li>부신 농축물(Adrenal substance) 혹은 핵단백질 추출물(Nucleoprotein extract)</li>\n</ul>"
+    },
+    "_id": "medicalData/Academies/applied-kinesiology/Muscle/tibialis-posterior.md",
+    "_raw": {
+      "sourceFilePath": "medicalData/Academies/applied-kinesiology/Muscle/tibialis-posterior.md",
+      "sourceFileName": "tibialis-posterior.md",
+      "sourceFileDir": "medicalData/Academies/applied-kinesiology/Muscle",
+      "contentType": "markdown",
+      "flattenedPath": "medicalData/Academies/applied-kinesiology/Muscle/tibialis-posterior"
+    },
+    "type": "AcademyDoc"
+  }
+]

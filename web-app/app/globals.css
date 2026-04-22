@@ -25,6 +25,20 @@ body {
 a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
 
+.condition-card {
+  display: block;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.09);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.condition-card:hover {
+  border-color: rgba(62,207,178,0.4);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
 /* Prose overrides for markdown content */
 .prose h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 1rem; }
 .prose h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem; }

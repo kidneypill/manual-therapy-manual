@@ -16,7 +16,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python -c \"import sys,json; d=json.load(sys.stdin); cmd=d.get('tool_input',{}).get('command',''); sys.exit(0) if 'check_integrity' not in cmd else sys.exit(1)\" || cd \"Z:/Projects/Manual-Therapy-Manual\" && python fix_integrity.py --dry-run 2>&1",
+            "command": "python -c \"import sys,json; d=json.load(sys.stdin); cmd=d.get('tool_input',{}).get('command',''); sys.exit(0) if 'check_integrity' not in cmd else sys.exit(1)\" || cd \"Z:/Projects/Manual-Therapy-Manual\" && python automators/fix_integrity.py --dry-run 2>&1",
             "statusMessage": "check_integrity 완료 — fix_integrity.py dry-run 실행 중..."
           }
         ]

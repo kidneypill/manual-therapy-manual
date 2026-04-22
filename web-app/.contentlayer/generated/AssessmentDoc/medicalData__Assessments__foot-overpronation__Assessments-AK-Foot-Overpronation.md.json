@@ -1,0 +1,23 @@
+{
+  "uid": "ASS-AK-OVERPRONATION-001",
+  "name_en": "Applied kinesiology Muscle Test",
+  "name_ko": "응용근신경학 근육검사",
+  "parent_condition_uid": "CON-FOOT-OVERPRONATION-001",
+  "category": "assessment_library",
+  "academy": "applied-kinesiology",
+  "status": "active\r",
+  "body": {
+    "raw": "\r\n# 1. AK 관점의 핵심 이론\r\n- Foot overpronation은 **후경골근(Tibialis Posterior)**의 약화와 밀접한 관련이 있음.\r\n\r\n# 2. 진단 및 평가(Assesment)\r\n- **근육검사** : [후경골근(Tibialis Posterior)](/Academies/applied-kinesiology/Muscle/tibialis-posterior.md)\r\n- **충격흡수검사(shock absorber test)**\r\n  - 검사법 : 여러 가지 벡터를 이용해 발을 두드린 뒤 지표근육의 근력을 재측정한다.\r\n  - 지표근육 : 요근(Psoas)\r\n  - 결과해석 : 발에 기능이상이 있으면 강했던 지표근육의 약화가 대부분 나타난다.\r\n- **양성지지반응 유발검사**\r\n  - 검사법 : 환자가 서있을 때 지표근육의 약화. 환자의 다리를 외회전시킨 채 서게 하여 체중이 외측장궁에 부하되게 한다. 다시 지표근육을 검사한다.\r\n  - 결과해석 : 지표근육이 강해지면 내측장궁에 문제가 있음을 의미한다.\r\n- **촉진**\r\n  - 검사법 : 검사자가 내측장궁 밑으로 손가락을 넣어 긴장을 느낀다. 내측장궁을 유지시키는 인대를 촉진한다.\r\n  - 결과해석 : 인대에 명백한 압통이 있는 경우 내측장궁의 붕괴를 의미한다.",
+    "html": "<h1>1. AK 관점의 핵심 이론</h1>\n<ul>\n<li>Foot overpronation은 **후경골근(Tibialis Posterior)**의 약화와 밀접한 관련이 있음.</li>\n</ul>\n<h1>2. 진단 및 평가(Assesment)</h1>\n<ul>\n<li><strong>근육검사</strong> : <a href=\"/Academies/applied-kinesiology/Muscle/tibialis-posterior.md\">후경골근(Tibialis Posterior)</a></li>\n<li><strong>충격흡수검사(shock absorber test)</strong>\n<ul>\n<li>검사법 : 여러 가지 벡터를 이용해 발을 두드린 뒤 지표근육의 근력을 재측정한다.</li>\n<li>지표근육 : 요근(Psoas)</li>\n<li>결과해석 : 발에 기능이상이 있으면 강했던 지표근육의 약화가 대부분 나타난다.</li>\n</ul>\n</li>\n<li><strong>양성지지반응 유발검사</strong>\n<ul>\n<li>검사법 : 환자가 서있을 때 지표근육의 약화. 환자의 다리를 외회전시킨 채 서게 하여 체중이 외측장궁에 부하되게 한다. 다시 지표근육을 검사한다.</li>\n<li>결과해석 : 지표근육이 강해지면 내측장궁에 문제가 있음을 의미한다.</li>\n</ul>\n</li>\n<li><strong>촉진</strong>\n<ul>\n<li>검사법 : 검사자가 내측장궁 밑으로 손가락을 넣어 긴장을 느낀다. 내측장궁을 유지시키는 인대를 촉진한다.</li>\n<li>결과해석 : 인대에 명백한 압통이 있는 경우 내측장궁의 붕괴를 의미한다.</li>\n</ul>\n</li>\n</ul>"
+  },
+  "_id": "medicalData/Assessments/foot-overpronation/Assessments-AK-Foot-Overpronation.md",
+  "_raw": {
+    "sourceFilePath": "medicalData/Assessments/foot-overpronation/Assessments-AK-Foot-Overpronation.md",
+    "sourceFileName": "Assessments-AK-Foot-Overpronation.md",
+    "sourceFileDir": "medicalData/Assessments/foot-overpronation",
+    "contentType": "markdown",
+    "flattenedPath": "medicalData/Assessments/foot-overpronation/Assessments-AK-Foot-Overpronation"
+  },
+  "type": "AssessmentDoc",
+  "conditionSlug": "foot-overpronation"
+}

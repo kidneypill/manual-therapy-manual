@@ -1,0 +1,219 @@
+{
+  "cacheItemsMap": {
+    "medicalData/Conditions/foot-overpronation/Overview.md": {
+      "document": {
+        "uid": "CON-FOOT-OVERPRONATION-OVERVIEW",
+        "parent_condition_uid": "CON-FOOT-OVERPRONATION-001",
+        "section_type": "OVERVIEW",
+        "status": "active\r",
+        "body": {
+          "raw": "\r\n# 1. 개념 (Overview)\r\n\r\n## 1-1. 이론 (Theory)\r\n- **정상 범위의 회내** : 보행 시 발이 지표면과 접촉할 때 일어나는 **적절한 회내(pronation)는 정상**이다. 입각기(stance phase)의 15~25% 지점이 되면 발은 회내전으로부터 벗어난다. 이 시점으로부터 발은 보행주기의 발가락 들림을 위해 견고한 지렛대 역할을 하기 위한 준비에 들어간다.\r\n- **증가된 회내전** : 75%의 체중부하가 될 때까지 발이 견고한 지렛대의 역할로 변환되지 않으면 **증가된 회내전**이 있다고 정의한다.\r\n- 발이 정상이면 발의 궁(arch)에 최대의 체중이 가해져도 견뎌낼 수 있다.\r\n- **발의 기능이 정상이기 위한 조건** : 정상적인 발의 기능을 위해서는 다음 요소들이 정상이어야 한다.\r\n  - **골격 구조**\r\n  - **인대 기능**\r\n  - **근육과 근막의 기능**\r\n\r\n## 1-2. 현상\r\n- **내측족궁 무너짐** : 보행 시 발의 **내측족궁(Medial Longitdinal Arch)** 이 과도하게 무너지며 거골(Talus)이 내측 및 하방으로 이동한다.\r\n- **체중부하 시 족저근막(plantar fascia) 긴장**\r\n- **내측족궁 긴장**\r\n- **경골, 비골 내회전**\r\n- **슬개골 내회전**\r\n- **신발 뒤꿈치 바깥쪽 닳음**\r\n\r\n## 1-4. 시각 자료 Visual materials\r\n![Foot_overpronation](/Assets/foot-overpronation/foot_overpronation.jpg)\r\n",
+          "html": "<h1>1. 개념 (Overview)</h1>\n<h2>1-1. 이론 (Theory)</h2>\n<ul>\n<li><strong>정상 범위의 회내</strong> : 보행 시 발이 지표면과 접촉할 때 일어나는 <strong>적절한 회내(pronation)는 정상</strong>이다. 입각기(stance phase)의 15~25% 지점이 되면 발은 회내전으로부터 벗어난다. 이 시점으로부터 발은 보행주기의 발가락 들림을 위해 견고한 지렛대 역할을 하기 위한 준비에 들어간다.</li>\n<li><strong>증가된 회내전</strong> : 75%의 체중부하가 될 때까지 발이 견고한 지렛대의 역할로 변환되지 않으면 <strong>증가된 회내전</strong>이 있다고 정의한다.</li>\n<li>발이 정상이면 발의 궁(arch)에 최대의 체중이 가해져도 견뎌낼 수 있다.</li>\n<li><strong>발의 기능이 정상이기 위한 조건</strong> : 정상적인 발의 기능을 위해서는 다음 요소들이 정상이어야 한다.\n<ul>\n<li><strong>골격 구조</strong></li>\n<li><strong>인대 기능</strong></li>\n<li><strong>근육과 근막의 기능</strong></li>\n</ul>\n</li>\n</ul>\n<h2>1-2. 현상</h2>\n<ul>\n<li><strong>내측족궁 무너짐</strong> : 보행 시 발의 <strong>내측족궁(Medial Longitdinal Arch)</strong> 이 과도하게 무너지며 거골(Talus)이 내측 및 하방으로 이동한다.</li>\n<li><strong>체중부하 시 족저근막(plantar fascia) 긴장</strong></li>\n<li><strong>내측족궁 긴장</strong></li>\n<li><strong>경골, 비골 내회전</strong></li>\n<li><strong>슬개골 내회전</strong></li>\n<li><strong>신발 뒤꿈치 바깥쪽 닳음</strong></li>\n</ul>\n<h2>1-4. 시각 자료 Visual materials</h2>\n<p><img src=\"/Assets/foot-overpronation/foot_overpronation.jpg\" alt=\"Foot_overpronation\"></p>"
+        },
+        "_id": "medicalData/Conditions/foot-overpronation/Overview.md",
+        "_raw": {
+          "sourceFilePath": "medicalData/Conditions/foot-overpronation/Overview.md",
+          "sourceFileName": "Overview.md",
+          "sourceFileDir": "medicalData/Conditions/foot-overpronation",
+          "contentType": "markdown",
+          "flattenedPath": "medicalData/Conditions/foot-overpronation/Overview"
+        },
+        "type": "ConditionSection",
+        "conditionSlug": "foot-overpronation",
+        "sectionKey": "overview"
+      },
+      "documentHash": "1776694816000",
+      "hasWarnings": false,
+      "documentTypeName": "ConditionSection"
+    },
+    "medicalData/Conditions/foot-overpronation/Mechanism.md": {
+      "document": {
+        "uid": "CON-FOOT-OVERPRONATION-MECHANISM",
+        "parent_condition_uid": "CON-FOOT-OVERPRONATION-001",
+        "section_type": "MECHANISM",
+        "status": "active\r",
+        "body": {
+          "raw": "\r\n## 1-3. 기전(Mechanism)\r\n- **가설** : 장비근(Triceps surae) 단축 및 아킬레스건(Achilles tendon) 단축\r\n  - 체중이 중족부(midfoot)로 이동\r\n  - 족배굴곡(foot dorsiflexion) 저하\r\n  - 보상 : 거골하관절(subtalar joint) 이완 및 회내전\r\n  - 보상 : 중족관절(mid-tarsal joint) 이완 및 회내전\r\n  - 결과 : 인대 신장\r\n  - 결과 : 유연성 편평족(flexible flatfoot)\r\n",
+          "html": "<h2>1-3. 기전(Mechanism)</h2>\n<ul>\n<li><strong>가설</strong> : 장비근(Triceps surae) 단축 및 아킬레스건(Achilles tendon) 단축\n<ul>\n<li>체중이 중족부(midfoot)로 이동</li>\n<li>족배굴곡(foot dorsiflexion) 저하</li>\n<li>보상 : 거골하관절(subtalar joint) 이완 및 회내전</li>\n<li>보상 : 중족관절(mid-tarsal joint) 이완 및 회내전</li>\n<li>결과 : 인대 신장</li>\n<li>결과 : 유연성 편평족(flexible flatfoot)</li>\n</ul>\n</li>\n</ul>"
+        },
+        "_id": "medicalData/Conditions/foot-overpronation/Mechanism.md",
+        "_raw": {
+          "sourceFilePath": "medicalData/Conditions/foot-overpronation/Mechanism.md",
+          "sourceFileName": "Mechanism.md",
+          "sourceFileDir": "medicalData/Conditions/foot-overpronation",
+          "contentType": "markdown",
+          "flattenedPath": "medicalData/Conditions/foot-overpronation/Mechanism"
+        },
+        "type": "ConditionSection",
+        "conditionSlug": "foot-overpronation",
+        "sectionKey": "mechanism"
+      },
+      "documentHash": "1776694816000",
+      "hasWarnings": false,
+      "documentTypeName": "ConditionSection"
+    },
+    "medicalData/Conditions/foot-overpronation/Assessment.md": {
+      "document": {
+        "uid": "CON-FOOT-OVERPRONATION-ASSESSMENT",
+        "parent_condition_uid": "CON-FOOT-OVERPRONATION-001",
+        "section_type": "ASSESSMENT",
+        "status": "active\r",
+        "body": {
+          "raw": "\r\n# 2. 진단 및 평가 (Assessment)\r\n- **장비근 단축 검사:** 족배굴곡 ROM을 검사한다\r\n  - 주의사항 : 거골(Talus)에 대해 종골(Calcaneus), 주상골(Navicular), 입방골(Cuboid)을 고정할 것\r\n  - 세부사항 : 종골, 중족골을 잡아서 고정\r\n  - **정상** : 족관절에서 10도 이상의 배굴\r\n  - **비정상** : 족관절에서 10도 미만의 배굴\r\n  - **결과해석** : 비정상인 경우 **장비근 단축**을 의미한다.\r\n- **sign:** Helbing's sign (+)\r\n  - 주의사항 : 신발을 벗은 상태에서 검사\r\n  - 세부사항 : 아킬레스건이 내측으로 휘어 들어간 상태\r\n- **observation** : 기립위\r\n  - 주의사항 : 신발을 벗은 상태에서 검사\r\n- **Unique test** :\r\n  - [Applied Kinesiology](/Assessments/foot-overpronation/Assessments-AK-Foot-Overpronation.md)\r\n  - [SOT](/Assessments/pelvic-subluxation/Assessments-SOT-Category-2-Pelvic-Subluxataion.md)\r\n",
+          "html": "<h1>2. 진단 및 평가 (Assessment)</h1>\n<ul>\n<li><strong>장비근 단축 검사:</strong> 족배굴곡 ROM을 검사한다\n<ul>\n<li>주의사항 : 거골(Talus)에 대해 종골(Calcaneus), 주상골(Navicular), 입방골(Cuboid)을 고정할 것</li>\n<li>세부사항 : 종골, 중족골을 잡아서 고정</li>\n<li><strong>정상</strong> : 족관절에서 10도 이상의 배굴</li>\n<li><strong>비정상</strong> : 족관절에서 10도 미만의 배굴</li>\n<li><strong>결과해석</strong> : 비정상인 경우 <strong>장비근 단축</strong>을 의미한다.</li>\n</ul>\n</li>\n<li><strong>sign:</strong> Helbing's sign (+)\n<ul>\n<li>주의사항 : 신발을 벗은 상태에서 검사</li>\n<li>세부사항 : 아킬레스건이 내측으로 휘어 들어간 상태</li>\n</ul>\n</li>\n<li><strong>observation</strong> : 기립위\n<ul>\n<li>주의사항 : 신발을 벗은 상태에서 검사</li>\n</ul>\n</li>\n<li><strong>Unique test</strong> :\n<ul>\n<li><a href=\"/Assessments/foot-overpronation/Assessments-AK-Foot-Overpronation.md\">Applied Kinesiology</a></li>\n<li><a href=\"/Assessments/pelvic-subluxation/Assessments-SOT-Category-2-Pelvic-Subluxataion.md\">SOT</a></li>\n</ul>\n</li>\n</ul>"
+        },
+        "_id": "medicalData/Conditions/foot-overpronation/Assessment.md",
+        "_raw": {
+          "sourceFilePath": "medicalData/Conditions/foot-overpronation/Assessment.md",
+          "sourceFileName": "Assessment.md",
+          "sourceFileDir": "medicalData/Conditions/foot-overpronation",
+          "contentType": "markdown",
+          "flattenedPath": "medicalData/Conditions/foot-overpronation/Assessment"
+        },
+        "type": "ConditionSection",
+        "conditionSlug": "foot-overpronation",
+        "sectionKey": "assessment"
+      },
+      "documentHash": "1776694816000",
+      "hasWarnings": false,
+      "documentTypeName": "ConditionSection"
+    },
+    "medicalData/Conditions/foot-overpronation/Prognosis.md": {
+      "document": {
+        "uid": "CON-FOOT-OVERPRONATION-PROGNOSIS",
+        "parent_condition_uid": "CON-FOOT-OVERPRONATION-001",
+        "section_type": "PROGNOSIS",
+        "status": "active\r",
+        "body": {
+          "raw": "\r\n# 4. 예후 (Prognosis)\r\n",
+          "html": "<h1>4. 예후 (Prognosis)</h1>"
+        },
+        "_id": "medicalData/Conditions/foot-overpronation/Prognosis.md",
+        "_raw": {
+          "sourceFilePath": "medicalData/Conditions/foot-overpronation/Prognosis.md",
+          "sourceFileName": "Prognosis.md",
+          "sourceFileDir": "medicalData/Conditions/foot-overpronation",
+          "contentType": "markdown",
+          "flattenedPath": "medicalData/Conditions/foot-overpronation/Prognosis"
+        },
+        "type": "ConditionSection",
+        "conditionSlug": "foot-overpronation",
+        "sectionKey": "prognosis"
+      },
+      "documentHash": "1776784135000",
+      "hasWarnings": false,
+      "documentTypeName": "ConditionSection"
+    },
+    "medicalData/Conditions/foot-overpronation/Treatment.md": {
+      "document": {
+        "uid": "CON-FOOT-OVERPRONATION-TREATMENT",
+        "parent_condition_uid": "CON-FOOT-OVERPRONATION-001",
+        "section_type": "TREATMENT",
+        "status": "active\r",
+        "body": {
+          "raw": "\r\n# 3. 치료 (Treatment)\r\n\r\n## 3-1. 근육의 기능\r\n- **후경골근**\r\n- **장비근**\r\n  - 목표 : 장비근 신장 및 관절운동범위 증가\r\n    - 세부사항 : 족배굴곡이 10도 이상 일어날 수 있게 하기\r\n  - 테크닉\r\n    - 주의사항 : 근육의 신장은 수축, 이완, 신장의 순서대로 하는 테크닉이 효과적이다. 이 방법이 순간적으로 하는 갑작스런 신장(ballistic stretching)보다 효과적이다.\r\n    - **AK**\r\n      - 간헐적 냉기와 신장요법\r\n      - 근막이완\r\n      - 근육 및 피부수용체 치료\r\n      - PRYT\r\n      - 평형 동기\r\n      - 경막긴장 완화\r\n    \r\n    - **자가치료**\r\n      - 방법 :\r\n        (1) 환자가 벽을 마주 보고 벽에서 3피트 뒤에 서서 양쪽 다리를 모두 내회전시킨 자세에서 시작. (이 자세가 중족부를 잠기게 만들어 인대의 신장을 막아준다.)\r\n        (2) 손으로 벽을 짚은 채 몸을 벽 쪽으로 기울여 비복근과 가자미근을 최대한 신장. 이 자세에서 장비근을 7초간 등척성 수축시킨 후 2~5초간 이완.\r\n        (3) 위 과정을 매일 5회, 30일간 반복.\r\n      - 기대효과 :\r\n        신장과정이 끝나면 보통 약 6도 정도 배굴 증가\r\n\r\n## 3-2. 아탈구\r\n![subtalar-joint-adjustment](/Assets/foot-overpronation/subtalar_joint_adjustment.jpg)\r\n- **거골(Talus)**\r\n  - 과회내(overpronation) 시 대부분 아탈구가 있음\r\n  - **교정방향** : Lateral → Medial, 약간 Cephalad\r\n  - 관련 근육 : 비골근, 가자미근, 전경골근, 후경골근, 경부 굴근\r\n  - **교정방법** :\r\n     (1) 환자 앙와위\r\n     (2) 의사는 오른손 모지구(thenar eminance)로 외측 비골과(lateral malleolus) 바로 밑을 단단히 감싸 거골과의 접촉을 이룬다.\r\n     (3) 의사는 왼손 새끼손가락이 경골 바로 밑에서 거골에 접촉되도록 발등을 감싼다.\r\n     (4) 환자가 적절히 이완되면 족관절에서 발을 분리시키기 위해 양손으로 견인한 뒤 마지막 시점에서 의사의 오른손으로 거골을 Lateral → Medial, 약간 Cephalad로 움직인다.\r\n   - 주의사항 : 교정 시 발은 약간 외번된다. 교정방향은 아탈구의 방향에 의거한다.\r\n\r\n## 3-3. 지지(Support)\r\n- **신발**\r\n  - 뒤축이 종골 내외측면을 견고하게 지지할 수 있어야 한다.\r\n  - 신발 뒤축은 내측에서 눌러서 쉽게 들어가면 안 된다.\r\n  - 앞쪽이 좁은 신발은 중족골을 압박해 문제를 일으킨다. 중족골 교정에 대한 치료효과를 감소시키는 원인이 된다.\r\n- **보조기**\r\n  - 오랜 기간의 과회내에 의해 발이 많이 손상된 경우 적용한다.\r\n  - 유연성 보조기(flexible orthotic)가 교정 효과 유지에 우수하다.\r\n  - 견고한 보조기는 AK 검사에 의하면 원격적 기능이상의 원인이 되는 경우가 있다.\r\n",
+          "html": "<h1>3. 치료 (Treatment)</h1>\n<h2>3-1. 근육의 기능</h2>\n<ul>\n<li><strong>후경골근</strong></li>\n<li><strong>장비근</strong>\n<ul>\n<li>목표 : 장비근 신장 및 관절운동범위 증가\n<ul>\n<li>세부사항 : 족배굴곡이 10도 이상 일어날 수 있게 하기</li>\n</ul>\n</li>\n<li>테크닉\n<ul>\n<li>\n<p>주의사항 : 근육의 신장은 수축, 이완, 신장의 순서대로 하는 테크닉이 효과적이다. 이 방법이 순간적으로 하는 갑작스런 신장(ballistic stretching)보다 효과적이다.</p>\n</li>\n<li>\n<p><strong>AK</strong></p>\n<ul>\n<li>간헐적 냉기와 신장요법</li>\n<li>근막이완</li>\n<li>근육 및 피부수용체 치료</li>\n<li>PRYT</li>\n<li>평형 동기</li>\n<li>경막긴장 완화</li>\n</ul>\n</li>\n<li>\n<p><strong>자가치료</strong></p>\n<ul>\n<li>방법 :\r\n(1) 환자가 벽을 마주 보고 벽에서 3피트 뒤에 서서 양쪽 다리를 모두 내회전시킨 자세에서 시작. (이 자세가 중족부를 잠기게 만들어 인대의 신장을 막아준다.)\r\n(2) 손으로 벽을 짚은 채 몸을 벽 쪽으로 기울여 비복근과 가자미근을 최대한 신장. 이 자세에서 장비근을 7초간 등척성 수축시킨 후 2~5초간 이완.\r\n(3) 위 과정을 매일 5회, 30일간 반복.</li>\n<li>기대효과 :\r\n신장과정이 끝나면 보통 약 6도 정도 배굴 증가</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<h2>3-2. 아탈구</h2>\n<p><img src=\"/Assets/foot-overpronation/subtalar_joint_adjustment.jpg\" alt=\"subtalar-joint-adjustment\"></p>\n<ul>\n<li><strong>거골(Talus)</strong>\n<ul>\n<li>과회내(overpronation) 시 대부분 아탈구가 있음</li>\n<li><strong>교정방향</strong> : Lateral → Medial, 약간 Cephalad</li>\n<li>관련 근육 : 비골근, 가자미근, 전경골근, 후경골근, 경부 굴근</li>\n<li><strong>교정방법</strong> :\r\n(1) 환자 앙와위\r\n(2) 의사는 오른손 모지구(thenar eminance)로 외측 비골과(lateral malleolus) 바로 밑을 단단히 감싸 거골과의 접촉을 이룬다.\r\n(3) 의사는 왼손 새끼손가락이 경골 바로 밑에서 거골에 접촉되도록 발등을 감싼다.\r\n(4) 환자가 적절히 이완되면 족관절에서 발을 분리시키기 위해 양손으로 견인한 뒤 마지막 시점에서 의사의 오른손으로 거골을 Lateral → Medial, 약간 Cephalad로 움직인다.</li>\n<li>주의사항 : 교정 시 발은 약간 외번된다. 교정방향은 아탈구의 방향에 의거한다.</li>\n</ul>\n</li>\n</ul>\n<h2>3-3. 지지(Support)</h2>\n<ul>\n<li><strong>신발</strong>\n<ul>\n<li>뒤축이 종골 내외측면을 견고하게 지지할 수 있어야 한다.</li>\n<li>신발 뒤축은 내측에서 눌러서 쉽게 들어가면 안 된다.</li>\n<li>앞쪽이 좁은 신발은 중족골을 압박해 문제를 일으킨다. 중족골 교정에 대한 치료효과를 감소시키는 원인이 된다.</li>\n</ul>\n</li>\n<li><strong>보조기</strong>\n<ul>\n<li>오랜 기간의 과회내에 의해 발이 많이 손상된 경우 적용한다.</li>\n<li>유연성 보조기(flexible orthotic)가 교정 효과 유지에 우수하다.</li>\n<li>견고한 보조기는 AK 검사에 의하면 원격적 기능이상의 원인이 되는 경우가 있다.</li>\n</ul>\n</li>\n</ul>"
+        },
+        "_id": "medicalData/Conditions/foot-overpronation/Treatment.md",
+        "_raw": {
+          "sourceFilePath": "medicalData/Conditions/foot-overpronation/Treatment.md",
+          "sourceFileName": "Treatment.md",
+          "sourceFileDir": "medicalData/Conditions/foot-overpronation",
+          "contentType": "markdown",
+          "flattenedPath": "medicalData/Conditions/foot-overpronation/Treatment"
+        },
+        "type": "ConditionSection",
+        "conditionSlug": "foot-overpronation",
+        "sectionKey": "treatment"
+      },
+      "documentHash": "1776784135000",
+      "hasWarnings": false,
+      "documentTypeName": "ConditionSection"
+    },
+    "medicalData/Conditions/foot-overpronation/Disease-Definition.md": {
+      "document": {
+        "uid": "CON-FOOT-OVERPRONATION-DEFINITION",
+        "parent_condition_uid": "CON-FOOT-OVERPRONATION-001",
+        "section_type": "DEFINITION",
+        "status": "active\r",
+        "body": {
+          "raw": "\r\n# 질환 정의 (Disease Definition)\r\n\r\n## 정의\r\n- 발의 **과도한 회내(excessive pronation)** 로 인해 내측족궁이 체중부하 시 비정상적으로 무너지는 상태.\r\n- 보행 주기의 75% 체중부하 시점까지 발이 견고한 지렛대 역할로 전환되지 않을 경우 진단한다.\r\n\r\n## 분류\r\n- **유연성 편평족(Flexible Flatfoot)** : 비체중부하 시 족궁이 회복되는 경우\r\n- **강직성 편평족(Rigid Flatfoot)** : 비체중부하 시에도 족궁이 회복되지 않는 경우\r\n\r\n## 관련 용어\r\n- Overpronation, 과회내, 편평족(Flatfoot), Pes Planus\r\n",
+          "html": "<h1>질환 정의 (Disease Definition)</h1>\n<h2>정의</h2>\n<ul>\n<li>발의 <strong>과도한 회내(excessive pronation)</strong> 로 인해 내측족궁이 체중부하 시 비정상적으로 무너지는 상태.</li>\n<li>보행 주기의 75% 체중부하 시점까지 발이 견고한 지렛대 역할로 전환되지 않을 경우 진단한다.</li>\n</ul>\n<h2>분류</h2>\n<ul>\n<li><strong>유연성 편평족(Flexible Flatfoot)</strong> : 비체중부하 시 족궁이 회복되는 경우</li>\n<li><strong>강직성 편평족(Rigid Flatfoot)</strong> : 비체중부하 시에도 족궁이 회복되지 않는 경우</li>\n</ul>\n<h2>관련 용어</h2>\n<ul>\n<li>Overpronation, 과회내, 편평족(Flatfoot), Pes Planus</li>\n</ul>"
+        },
+        "_id": "medicalData/Conditions/foot-overpronation/Disease-Definition.md",
+        "_raw": {
+          "sourceFilePath": "medicalData/Conditions/foot-overpronation/Disease-Definition.md",
+          "sourceFileName": "Disease-Definition.md",
+          "sourceFileDir": "medicalData/Conditions/foot-overpronation",
+          "contentType": "markdown",
+          "flattenedPath": "medicalData/Conditions/foot-overpronation/Disease-Definition"
+        },
+        "type": "ConditionSection",
+        "conditionSlug": "foot-overpronation",
+        "sectionKey": "definition"
+      },
+      "documentHash": "1776864451765",
+      "hasWarnings": false,
+      "documentTypeName": "ConditionSection"
+    },
+    "medicalData/Assessments/foot-overpronation/Assessments-AK-Foot-Overpronation.md": {
+      "document": {
+        "uid": "ASS-AK-OVERPRONATION-001",
+        "name_en": "Applied kinesiology Muscle Test",
+        "name_ko": "응용근신경학 근육검사",
+        "parent_condition_uid": "CON-FOOT-OVERPRONATION-001",
+        "category": "assessment_library",
+        "academy": "applied-kinesiology",
+        "status": "active\r",
+        "body": {
+          "raw": "\r\n# 1. AK 관점의 핵심 이론\r\n- Foot overpronation은 **후경골근(Tibialis Posterior)**의 약화와 밀접한 관련이 있음.\r\n\r\n# 2. 진단 및 평가(Assesment)\r\n- **근육검사** : [후경골근(Tibialis Posterior)](/Academies/applied-kinesiology/Muscle/tibialis-posterior.md)\r\n- **충격흡수검사(shock absorber test)**\r\n  - 검사법 : 여러 가지 벡터를 이용해 발을 두드린 뒤 지표근육의 근력을 재측정한다.\r\n  - 지표근육 : 요근(Psoas)\r\n  - 결과해석 : 발에 기능이상이 있으면 강했던 지표근육의 약화가 대부분 나타난다.\r\n- **양성지지반응 유발검사**\r\n  - 검사법 : 환자가 서있을 때 지표근육의 약화. 환자의 다리를 외회전시킨 채 서게 하여 체중이 외측장궁에 부하되게 한다. 다시 지표근육을 검사한다.\r\n  - 결과해석 : 지표근육이 강해지면 내측장궁에 문제가 있음을 의미한다.\r\n- **촉진**\r\n  - 검사법 : 검사자가 내측장궁 밑으로 손가락을 넣어 긴장을 느낀다. 내측장궁을 유지시키는 인대를 촉진한다.\r\n  - 결과해석 : 인대에 명백한 압통이 있는 경우 내측장궁의 붕괴를 의미한다.",
+          "html": "<h1>1. AK 관점의 핵심 이론</h1>\n<ul>\n<li>Foot overpronation은 **후경골근(Tibialis Posterior)**의 약화와 밀접한 관련이 있음.</li>\n</ul>\n<h1>2. 진단 및 평가(Assesment)</h1>\n<ul>\n<li><strong>근육검사</strong> : <a href=\"/Academies/applied-kinesiology/Muscle/tibialis-posterior.md\">후경골근(Tibialis Posterior)</a></li>\n<li><strong>충격흡수검사(shock absorber test)</strong>\n<ul>\n<li>검사법 : 여러 가지 벡터를 이용해 발을 두드린 뒤 지표근육의 근력을 재측정한다.</li>\n<li>지표근육 : 요근(Psoas)</li>\n<li>결과해석 : 발에 기능이상이 있으면 강했던 지표근육의 약화가 대부분 나타난다.</li>\n</ul>\n</li>\n<li><strong>양성지지반응 유발검사</strong>\n<ul>\n<li>검사법 : 환자가 서있을 때 지표근육의 약화. 환자의 다리를 외회전시킨 채 서게 하여 체중이 외측장궁에 부하되게 한다. 다시 지표근육을 검사한다.</li>\n<li>결과해석 : 지표근육이 강해지면 내측장궁에 문제가 있음을 의미한다.</li>\n</ul>\n</li>\n<li><strong>촉진</strong>\n<ul>\n<li>검사법 : 검사자가 내측장궁 밑으로 손가락을 넣어 긴장을 느낀다. 내측장궁을 유지시키는 인대를 촉진한다.</li>\n<li>결과해석 : 인대에 명백한 압통이 있는 경우 내측장궁의 붕괴를 의미한다.</li>\n</ul>\n</li>\n</ul>"
+        },
+        "_id": "medicalData/Assessments/foot-overpronation/Assessments-AK-Foot-Overpronation.md",
+        "_raw": {
+          "sourceFilePath": "medicalData/Assessments/foot-overpronation/Assessments-AK-Foot-Overpronation.md",
+          "sourceFileName": "Assessments-AK-Foot-Overpronation.md",
+          "sourceFileDir": "medicalData/Assessments/foot-overpronation",
+          "contentType": "markdown",
+          "flattenedPath": "medicalData/Assessments/foot-overpronation/Assessments-AK-Foot-Overpronation"
+        },
+        "type": "AssessmentDoc",
+        "conditionSlug": "foot-overpronation"
+      },
+      "documentHash": "1776864454865",
+      "hasWarnings": false,
+      "documentTypeName": "AssessmentDoc"
+    },
+    "medicalData/Academies/applied-kinesiology/Muscle/tibialis-posterior.md": {
+      "document": {
+        "uid": "MUS-AK-TIBIALIS-POSTERIOR",
+        "name_en": "Tibialis Posterior",
+        "name_ko": "후경골근",
+        "category": "muscle_profile",
+        "academy": "applied-kinesiology",
+        "status": "active",
+        "target_region": "lower_extremity",
+        "innervation": "경골신경 (Tibial Nerve), L5, S1",
+        "related_conditions": [
+          "CON-FOOT-OVERPRONATION-001\r"
+        ],
+        "body": {
+          "raw": "\r\n# 후경골근 (Tibialis Posterior)\r\n\r\n## 1. 해부학 (Anatomy)\r\n- **기시 (Origin)**: 경골 후면의 외측, 비골의 내측 2/3, 골간막, 근간격막, 심근막\r\n- **종지 (Insertion)**: 주상골 조면, 각 설상골의 족저면, 제2~제4중족골 기저부의 족저면, 입방골, 거골 재돌기\r\n- **작용 (Action)**: 발의 내번(Inversion), 족저굴곡(Plantar flexion), 발목관절 내측 안정화\r\n\r\n## 2. 근육 검사 (Muscle Test)\r\n### 검사 절차\r\n1. 환자는 앙와위(Supine)로 누워 발가락을 굴곡 상태로 유지합니다.\r\n2. 발을 최대한 족저굴곡시킨 후 내번(Inversion)시킵니다.\r\n3. 검사자는 발의 내측면에서 발등에 손을 대고, 발을 외번(Eversion)시키는 방향으로 압력을 가합니다.\r\n\r\n### 주의사항 및 확인사항\r\n- 후경골근 수축 시 해당 건(Tendon)이 도드라져 나오는지 확인해야 합니다.\r\n- 환자가 발목을 배굴(Dorsiflexion)할 경우 검사 매개변수가 변하므로 주의가 필요합니다.\r\n\r\n## 3. 추간공 5요소 및 AK 정보 (AK Specifics)\r\n### 신경 및 혈관계 (Nerve & NV)\r\n- **신경지배**: 경골신경 (L5, S1)\r\n- **신경혈관 반사점 (NV)**: 람다 (Lambda)\r\n\r\n### 신경림프 반사점 (NL)\r\n- **전방**: 배꼽 상방 2인치, 측방 1인치 (양측)\r\n- **후방**: T11과 T12 사이의 추궁판 근처\r\n\r\n### 경락 및 장기 (Meridian & Organ)\r\n- **연관 경락**: 심포경 (Pericardium)\r\n- **연관 장기**: 부신 (Adrenal), 방광 (Bladder)\r\n\r\n### 영양 (Nutrition)\r\n- 부신 농축물(Adrenal substance) 혹은 핵단백질 추출물(Nucleoprotein extract)",
+          "html": "<h1>후경골근 (Tibialis Posterior)</h1>\n<h2>1. 해부학 (Anatomy)</h2>\n<ul>\n<li><strong>기시 (Origin)</strong>: 경골 후면의 외측, 비골의 내측 2/3, 골간막, 근간격막, 심근막</li>\n<li><strong>종지 (Insertion)</strong>: 주상골 조면, 각 설상골의 족저면, 제2~제4중족골 기저부의 족저면, 입방골, 거골 재돌기</li>\n<li><strong>작용 (Action)</strong>: 발의 내번(Inversion), 족저굴곡(Plantar flexion), 발목관절 내측 안정화</li>\n</ul>\n<h2>2. 근육 검사 (Muscle Test)</h2>\n<h3>검사 절차</h3>\n<ol>\n<li>환자는 앙와위(Supine)로 누워 발가락을 굴곡 상태로 유지합니다.</li>\n<li>발을 최대한 족저굴곡시킨 후 내번(Inversion)시킵니다.</li>\n<li>검사자는 발의 내측면에서 발등에 손을 대고, 발을 외번(Eversion)시키는 방향으로 압력을 가합니다.</li>\n</ol>\n<h3>주의사항 및 확인사항</h3>\n<ul>\n<li>후경골근 수축 시 해당 건(Tendon)이 도드라져 나오는지 확인해야 합니다.</li>\n<li>환자가 발목을 배굴(Dorsiflexion)할 경우 검사 매개변수가 변하므로 주의가 필요합니다.</li>\n</ul>\n<h2>3. 추간공 5요소 및 AK 정보 (AK Specifics)</h2>\n<h3>신경 및 혈관계 (Nerve &#x26; NV)</h3>\n<ul>\n<li><strong>신경지배</strong>: 경골신경 (L5, S1)</li>\n<li><strong>신경혈관 반사점 (NV)</strong>: 람다 (Lambda)</li>\n</ul>\n<h3>신경림프 반사점 (NL)</h3>\n<ul>\n<li><strong>전방</strong>: 배꼽 상방 2인치, 측방 1인치 (양측)</li>\n<li><strong>후방</strong>: T11과 T12 사이의 추궁판 근처</li>\n</ul>\n<h3>경락 및 장기 (Meridian &#x26; Organ)</h3>\n<ul>\n<li><strong>연관 경락</strong>: 심포경 (Pericardium)</li>\n<li><strong>연관 장기</strong>: 부신 (Adrenal), 방광 (Bladder)</li>\n</ul>\n<h3>영양 (Nutrition)</h3>\n<ul>\n<li>부신 농축물(Adrenal substance) 혹은 핵단백질 추출물(Nucleoprotein extract)</li>\n</ul>"
+        },
+        "_id": "medicalData/Academies/applied-kinesiology/Muscle/tibialis-posterior.md",
+        "_raw": {
+          "sourceFilePath": "medicalData/Academies/applied-kinesiology/Muscle/tibialis-posterior.md",
+          "sourceFileName": "tibialis-posterior.md",
+          "sourceFileDir": "medicalData/Academies/applied-kinesiology/Muscle",
+          "contentType": "markdown",
+          "flattenedPath": "medicalData/Academies/applied-kinesiology/Muscle/tibialis-posterior"
+        },
+        "type": "AcademyDoc"
+      },
+      "documentHash": "1776864475025",
+      "hasWarnings": true,
+      "documentTypeName": "AcademyDoc"
+    }
+  }
+}

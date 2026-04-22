@@ -1,0 +1,21 @@
+{
+  "uid": "CON-FOOT-OVERPRONATION-PROGNOSIS",
+  "parent_condition_uid": "CON-FOOT-OVERPRONATION-001",
+  "section_type": "PROGNOSIS",
+  "status": "active\r",
+  "body": {
+    "raw": "\r\n# 4. 예후 (Prognosis)\r\n",
+    "html": "<h1>4. 예후 (Prognosis)</h1>"
+  },
+  "_id": "medicalData/Conditions/foot-overpronation/Prognosis.md",
+  "_raw": {
+    "sourceFilePath": "medicalData/Conditions/foot-overpronation/Prognosis.md",
+    "sourceFileName": "Prognosis.md",
+    "sourceFileDir": "medicalData/Conditions/foot-overpronation",
+    "contentType": "markdown",
+    "flattenedPath": "medicalData/Conditions/foot-overpronation/Prognosis"
+  },
+  "type": "ConditionSection",
+  "conditionSlug": "foot-overpronation",
+  "sectionKey": "prognosis"
+}

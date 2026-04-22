@@ -1,0 +1,66 @@
+[
+  {
+    "id": "foot-overpronation-overview",
+    "conditionSlug": "foot-overpronation",
+    "sectionType": "overview",
+    "nameEn": "foot-overpronation",
+    "nameKo": "",
+    "excerpt": "1. 개념 (Overview)\r \r 1-1. 이론 (Theory)\r - 정상 범위의 회내 : 보행 시 발이 지표면과 접촉할 때 일어나는 적절한 회내(pronation)는 정상이다. 입각기(stance phase)의 15~25% 지점이 되면 발은 회내전으로부터 벗어난다. 이 시점으로부터 발은 보행주기의 발가락 들림을 위해 견고한 지렛대 역할을 하기 위한 준비에 들어간다.\r - 증가된 회내전 : 75%의 체중부하가 될 때까지 발이 견고한 지렛대의 역할로 변환되지 않으면 증가된 회내전이 있다고 정의한다.\r - 발이 정상이면 발의 궁(ar"
+  },
+  {
+    "id": "foot-overpronation-mechanism",
+    "conditionSlug": "foot-overpronation",
+    "sectionType": "mechanism",
+    "nameEn": "foot-overpronation",
+    "nameKo": "",
+    "excerpt": "1-3. 기전(Mechanism)\r - 가설 : 장비근(Triceps surae) 단축 및 아킬레스건(Achilles tendon) 단축\r   - 체중이 중족부(midfoot)로 이동\r   - 족배굴곡(foot dorsiflexion) 저하\r   - 보상 : 거골하관절(subtalar joint) 이완 및 회내전\r   - 보상 : 중족관절(mid-tarsal joint) 이완 및 회내전\r   - 결과 : 인대 신장\r   - 결과 : 유연성 편평족(flexible flatfoot)"
+  },
+  {
+    "id": "foot-overpronation-assessment",
+    "conditionSlug": "foot-overpronation",
+    "sectionType": "assessment",
+    "nameEn": "foot-overpronation",
+    "nameKo": "",
+    "excerpt": "2. 진단 및 평가 (Assessment)\r - 장비근 단축 검사: 족배굴곡 ROM을 검사한다\r   - 주의사항 : 거골(Talus)에 대해 종골(Calcaneus), 주상골(Navicular), 입방골(Cuboid)을 고정할 것\r   - 세부사항 : 종골, 중족골을 잡아서 고정\r   - 정상 : 족관절에서 10도 이상의 배굴\r   - 비정상 : 족관절에서 10도 미만의 배굴\r   - 결과해석 : 비정상인 경우 장비근 단축을 의미한다.\r - sign: Helbing's sign (+)\r   - 주의사항 : 신발을 벗은 상태에서 검사"
+  },
+  {
+    "id": "foot-overpronation-prognosis",
+    "conditionSlug": "foot-overpronation",
+    "sectionType": "prognosis",
+    "nameEn": "foot-overpronation",
+    "nameKo": "",
+    "excerpt": "4. 예후 (Prognosis)"
+  },
+  {
+    "id": "foot-overpronation-treatment",
+    "conditionSlug": "foot-overpronation",
+    "sectionType": "treatment",
+    "nameEn": "foot-overpronation",
+    "nameKo": "",
+    "excerpt": "3. 치료 (Treatment)\r \r 3-1. 근육의 기능\r - 후경골근\r - 장비근\r   - 목표 : 장비근 신장 및 관절운동범위 증가\r     - 세부사항 : 족배굴곡이 10도 이상 일어날 수 있게 하기\r   - 테크닉\r     - 주의사항 : 근육의 신장은 수축, 이완, 신장의 순서대로 하는 테크닉이 효과적이다. 이 방법이 순간적으로 하는 갑작스런 신장(ballistic stretching)보다 효과적이다.\r     - AK\r       - 간헐적 냉기와 신장요법\r       - 근막이완\r       - 근육 및 피부수용체 치"
+  },
+  {
+    "id": "foot-overpronation-disease-definition",
+    "conditionSlug": "foot-overpronation",
+    "sectionType": "disease-definition",
+    "nameEn": "foot-overpronation",
+    "nameKo": "",
+    "excerpt": "질환 정의 (Disease Definition)\r \r 정의\r - 발의 과도한 회내(excessive pronation) 로 인해 내측족궁이 체중부하 시 비정상적으로 무너지는 상태.\r - 보행 주기의 75% 체중부하 시점까지 발이 견고한 지렛대 역할로 전환되지 않을 경우 진단한다.\r \r 분류\r - 유연성 편평족(Flexible Flatfoot) : 비체중부하 시 족궁이 회복되는 경우\r - 강직성 편평족(Rigid Flatfoot) : 비체중부하 시에도 족궁이 회복되지 않는 경우\r \r 관련 용어\r - Overpronation, 과회내,"
+  },
+  {
+    "id": "Assessments-AK-Foot-Overpronation",
+    "conditionSlug": "unknown",
+    "sectionType": "assessment",
+    "nameEn": "Assessments-AK-Foot-Overpronation",
+    "nameKo": "",
+    "excerpt": "1. AK 관점의 핵심 이론\r - Foot overpronation은 후경골근(Tibialis Posterior)의 약화와 밀접한 관련이 있음.\r \r 2. 진단 및 평가(Assesment)\r - 근육검사 : 후경골근(Tibialis Posterior)\r - 충격흡수검사(shock absorber test)\r   - 검사법 : 여러 가지 벡터를 이용해 발을 두드린 뒤 지표근육의 근력을 재측정한다.\r   - 지표근육 : 요근(Psoas)\r   - 결과해석 : 발에 기능이상이 있으면 강했던 지표근육의 약화가 대부분 나타난다.\r - 양성지"
+  },
+  {
+    "id": "Assessments-SOT-Category-2-Pelvic-Subluxataion",
+    "conditionSlug": "unknown",
+    "sectionType": "assessment",
+    "nameEn": "Assessments-SOT-Category-2-Pelvic-Subluxataion",
+    "nameKo": "",
+    "excerpt": "1. SOT 관점의 핵심 이론\r - SOT는 Pelvic subluxation을 Category 1, 2, 3로 분류한다.\r - Category 2 subluxation은 sacroiliac joint, symphysis pubis 2가지 subtype으로 나뉜다.\r - Category 2는 골성 아탈구(osseous subluxation)가 존재한다.\r \r 2. 진단 및 평가(Assesment)\r 2-1. 진단\r - Category 2 si 치료적 접촉검사(TL)\r   - 방법 :\r     (1) 환자 앙와위\r     (2) 지표"
+  }
+]

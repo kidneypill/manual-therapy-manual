@@ -1,0 +1,21 @@
+{
+  "uid": "CON-FOOT-OVERPRONATION-OVERVIEW",
+  "parent_condition_uid": "CON-FOOT-OVERPRONATION-001",
+  "section_type": "OVERVIEW",
+  "status": "active\r",
+  "body": {
+    "raw": "\r\n# 1. 개념 (Overview)\r\n\r\n## 1-1. 이론 (Theory)\r\n- **정상 범위의 회내** : 보행 시 발이 지표면과 접촉할 때 일어나는 **적절한 회내(pronation)는 정상**이다. 입각기(stance phase)의 15~25% 지점이 되면 발은 회내전으로부터 벗어난다. 이 시점으로부터 발은 보행주기의 발가락 들림을 위해 견고한 지렛대 역할을 하기 위한 준비에 들어간다.\r\n- **증가된 회내전** : 75%의 체중부하가 될 때까지 발이 견고한 지렛대의 역할로 변환되지 않으면 **증가된 회내전**이 있다고 정의한다.\r\n- 발이 정상이면 발의 궁(arch)에 최대의 체중이 가해져도 견뎌낼 수 있다.\r\n- **발의 기능이 정상이기 위한 조건** : 정상적인 발의 기능을 위해서는 다음 요소들이 정상이어야 한다.\r\n  - **골격 구조**\r\n  - **인대 기능**\r\n  - **근육과 근막의 기능**\r\n\r\n## 1-2. 현상\r\n- **내측족궁 무너짐** : 보행 시 발의 **내측족궁(Medial Longitdinal Arch)** 이 과도하게 무너지며 거골(Talus)이 내측 및 하방으로 이동한다.\r\n- **체중부하 시 족저근막(plantar fascia) 긴장**\r\n- **내측족궁 긴장**\r\n- **경골, 비골 내회전**\r\n- **슬개골 내회전**\r\n- **신발 뒤꿈치 바깥쪽 닳음**\r\n\r\n## 1-4. 시각 자료 Visual materials\r\n![Foot_overpronation](/Assets/foot-overpronation/foot_overpronation.jpg)\r\n",
+    "html": "<h1>1. 개념 (Overview)</h1>\n<h2>1-1. 이론 (Theory)</h2>\n<ul>\n<li><strong>정상 범위의 회내</strong> : 보행 시 발이 지표면과 접촉할 때 일어나는 <strong>적절한 회내(pronation)는 정상</strong>이다. 입각기(stance phase)의 15~25% 지점이 되면 발은 회내전으로부터 벗어난다. 이 시점으로부터 발은 보행주기의 발가락 들림을 위해 견고한 지렛대 역할을 하기 위한 준비에 들어간다.</li>\n<li><strong>증가된 회내전</strong> : 75%의 체중부하가 될 때까지 발이 견고한 지렛대의 역할로 변환되지 않으면 <strong>증가된 회내전</strong>이 있다고 정의한다.</li>\n<li>발이 정상이면 발의 궁(arch)에 최대의 체중이 가해져도 견뎌낼 수 있다.</li>\n<li><strong>발의 기능이 정상이기 위한 조건</strong> : 정상적인 발의 기능을 위해서는 다음 요소들이 정상이어야 한다.\n<ul>\n<li><strong>골격 구조</strong></li>\n<li><strong>인대 기능</strong></li>\n<li><strong>근육과 근막의 기능</strong></li>\n</ul>\n</li>\n</ul>\n<h2>1-2. 현상</h2>\n<ul>\n<li><strong>내측족궁 무너짐</strong> : 보행 시 발의 <strong>내측족궁(Medial Longitdinal Arch)</strong> 이 과도하게 무너지며 거골(Talus)이 내측 및 하방으로 이동한다.</li>\n<li><strong>체중부하 시 족저근막(plantar fascia) 긴장</strong></li>\n<li><strong>내측족궁 긴장</strong></li>\n<li><strong>경골, 비골 내회전</strong></li>\n<li><strong>슬개골 내회전</strong></li>\n<li><strong>신발 뒤꿈치 바깥쪽 닳음</strong></li>\n</ul>\n<h2>1-4. 시각 자료 Visual materials</h2>\n<p><img src=\"/Assets/foot-overpronation/foot_overpronation.jpg\" alt=\"Foot_overpronation\"></p>"
+  },
+  "_id": "medicalData/Conditions/foot-overpronation/Overview.md",
+  "_raw": {
+    "sourceFilePath": "medicalData/Conditions/foot-overpronation/Overview.md",
+    "sourceFileName": "Overview.md",
+    "sourceFileDir": "medicalData/Conditions/foot-overpronation",
+    "contentType": "markdown",
+    "flattenedPath": "medicalData/Conditions/foot-overpronation/Overview"
+  },
+  "type": "ConditionSection",
+  "conditionSlug": "foot-overpronation",
+  "sectionKey": "overview"
+}

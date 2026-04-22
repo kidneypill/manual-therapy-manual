@@ -38,7 +38,7 @@ function parseFrontmatter(content) {
 const docs = []
 
 // Collect condition sections
-const conditionsDir = path.join(REPO_ROOT, 'Conditions')
+const conditionsDir = path.join(REPO_ROOT, 'medicalData', 'Conditions')
 if (fs.existsSync(conditionsDir)) {
   for (const slug of fs.readdirSync(conditionsDir)) {
     const slugDir = path.join(conditionsDir, slug)
@@ -74,7 +74,7 @@ if (fs.existsSync(conditionsDir)) {
 }
 
 // Collect assessments
-const assessDir = path.join(REPO_ROOT, 'Assessments')
+const assessDir = path.join(REPO_ROOT, 'medicalData', 'Assessments')
 if (fs.existsSync(assessDir)) {
   function walkDir(dir) {
     for (const f of fs.readdirSync(dir)) {
