@@ -5,6 +5,34 @@ import { fileURLToPath } from 'url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const REPO_ROOT = path.resolve(__dirname, '../..')
 const OUT_PATH = path.resolve(__dirname, '../public/search-index.json')
+const STAMP_PATH = path.resolve(__dirname, '../public/search-index.stamp')
+
+function getMaxMtime(dir) {
+  if (!fs.existsSync(dir)) return 0
+  let max = 0
+  for (const f of fs.readdirSync(dir)) {
+    const p = path.join(dir, f)
+    const stat = fs.statSync(p)
+    if (stat.isDirectory()) {
+      max = Math.max(max, getMaxMtime(p))
+    } else {
+      max = Math.max(max, stat.mtimeMs)
+    }
+  }
+  return max
+}
+
+const conditionsDir = path.join(REPO_ROOT, 'medicalData', 'Conditions')
+const assessDir = path.join(REPO_ROOT, 'medicalData', 'Assessments')
+
+const sourceMtime = Math.max(getMaxMtime(conditionsDir), getMaxMtime(assessDir))
+
+const prevStamp = fs.existsSync(STAMP_PATH) ? parseFloat(fs.readFileSync(STAMP_PATH, 'utf-8')) : 0
+
+if (fs.existsSync(OUT_PATH) && sourceMtime <= prevStamp) {
+  console.log('Search index is up-to-date, skipping rebuild')
+  process.exit(0)
+}
 
 function stripFrontmatter(content) {
   return content.replace(/^---[\s\S]*?---\n?/, '').trim()
@@ -37,8 +65,6 @@ function parseFrontmatter(content) {
 
 const docs = []
 
-// Collect condition sections
-const conditionsDir = path.join(REPO_ROOT, 'medicalData', 'Conditions')
 if (fs.existsSync(conditionsDir)) {
   for (const slug of fs.readdirSync(conditionsDir)) {
     const slugDir = path.join(conditionsDir, slug)
@@ -73,8 +99,6 @@ if (fs.existsSync(conditionsDir)) {
   }
 }
 
-// Collect assessments
-const assessDir = path.join(REPO_ROOT, 'medicalData', 'Assessments')
 if (fs.existsSync(assessDir)) {
   function walkDir(dir) {
     for (const f of fs.readdirSync(dir)) {
@@ -103,4 +127,5 @@ if (fs.existsSync(assessDir)) {
 
 fs.mkdirSync(path.dirname(OUT_PATH), { recursive: true })
 fs.writeFileSync(OUT_PATH, JSON.stringify(docs, null, 2))
+fs.writeFileSync(STAMP_PATH, String(sourceMtime))
 console.log(`Search index built: ${docs.length} documents → ${OUT_PATH}`)

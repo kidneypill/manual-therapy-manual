@@ -69,6 +69,8 @@ export default makeSource({
   contentDirExclude: [
     'web-app', 'web', 'automators', 'medicalData/_schema', 'medicalData/Concepts', 'medicalData/Treatments',
     '__pycache__', '.git', 'node_modules', '.claude',
+    // Exclude build artifacts that could trigger watch loops
+    '.next', 'out', 'dist', 'build',
   ],
   documentTypes: [ConditionSection, AssessmentDoc, AcademyDoc],
 })
